@@ -22,6 +22,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     Search: "Lorg",
     "Type an animal": "Sgrìobh ainm beathaich",
     "Search animals by name": "Lorg beathach air ainm",
+    "This site needs an access key.": "Feumaidh an làrach seo iuchair inntrigidh.",
+    "200 animals. One unusual fact on each page.": "200 beathach. Aon fhìrinn neo-àbhaisteach air gach duilleag.",
+    "Places, habits, a class quiz, people, and projects for Primary 1 to Primary 7.":
+      "Àiteachan, cleachdaidhean, ceistean clas, daoine, agus pròiseactan airson Clas 1 gu Clas 7.",
+    "Buy an access key at Every School Ever. Then type the key here.":
+      "Ceannaich iuchair inntrigidh aig Every School Ever. An uair sin sgrìobh an iuchair an seo.",
+    "Buy an access key": "Ceannaich iuchair inntrigidh",
+    "Access key": "Iuchair inntrigidh",
+    "Open the site": "Fosgail an làrach",
+    "That key does not open the site.": "Chan eil an iuchair sin a' fosgladh na làraich.",
+    Lock: "Glas",
   },
   cy: {
     "Every Animal Ever": "Pob anifail erioed",
@@ -42,6 +53,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     Search: "Chwilio",
     "Type an animal": "Teipiwch anifail",
     "Search animals by name": "Chwilio anifeiliaid wrth enw",
+    "This site needs an access key.": "Mae angen allwedd mynediad ar y wefan hon.",
+    "200 animals. One unusual fact on each page.": "200 o anifeiliaid. Un ffaith anarferol ar bob tudalen.",
+    "Places, habits, a class quiz, people, and projects for Primary 1 to Primary 7.":
+      "Lleoedd, arferion, cwis dosbarth, pobl, a phrosiectau ar gyfer Cynradd 1 i Gynradd 7.",
+    "Buy an access key at Every School Ever. Then type the key here.":
+      "Prynwch allwedd mynediad yn Every School Ever. Yna teipiwch yr allwedd yma.",
+    "Buy an access key": "Prynu allwedd mynediad",
+    "Access key": "Allwedd mynediad",
+    "Open the site": "Agor y wefan",
+    "That key does not open the site.": "Nid yw'r allwedd honno'n agor y wefan.",
+    Lock: "Cloi",
   },
   ga: {
     "Every Animal Ever": "Gach ainmhí riamh",
@@ -62,6 +84,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     Search: "Cuardaigh",
     "Type an animal": "Clóscríobh ainmhí",
     "Search animals by name": "Cuardaigh ainmhithe de réir ainm",
+    "This site needs an access key.": "Tá eochair rochtana de dhíth ar an suíomh seo.",
+    "200 animals. One unusual fact on each page.": "200 ainmhí. Fíric neamhghnách amháin ar gach leathanach.",
+    "Places, habits, a class quiz, people, and projects for Primary 1 to Primary 7.":
+      "Áiteanna, nósanna, tráth na gceist ranga, daoine, agus tionscadail do Bhunscoil 1 go Bunscoil 7.",
+    "Buy an access key at Every School Ever. Then type the key here.":
+      "Ceannaigh eochair rochtana ag Every School Ever. Ansin clóscríobh an eochair anseo.",
+    "Buy an access key": "Ceannaigh eochair rochtana",
+    "Access key": "Eochair rochtana",
+    "Open the site": "Oscail an suíomh",
+    "That key does not open the site.": "Ní osclaíonn an eochair sin an suíomh.",
+    Lock: "Glasáil",
   },
   fr: {
     "Every Animal Ever": "Tous les animaux",
@@ -82,6 +115,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     Search: "Chercher",
     "Type an animal": "Écris un animal",
     "Search animals by name": "Chercher un animal par son nom",
+    "This site needs an access key.": "Ce site a besoin d'une clé d'accès.",
+    "200 animals. One unusual fact on each page.": "200 animaux. Un fait insolite sur chaque page.",
+    "Places, habits, a class quiz, people, and projects for Primary 1 to Primary 7.":
+      "Des lieux, des habitudes, un quiz de classe, des personnes, et des projets de la Primaire 1 à la Primaire 7.",
+    "Buy an access key at Every School Ever. Then type the key here.":
+      "Achetez une clé d'accès sur Every School Ever. Puis tapez la clé ici.",
+    "Buy an access key": "Acheter une clé d'accès",
+    "Access key": "Clé d'accès",
+    "Open the site": "Ouvrir le site",
+    "That key does not open the site.": "Cette clé n'ouvre pas le site.",
+    Lock: "Verrouiller",
   },
   it: {
     "Every Animal Ever": "Tutti gli animali",
@@ -102,6 +146,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     Search: "Cerca",
     "Type an animal": "Scrivi un animale",
     "Search animals by name": "Cerca un animale per nome",
+    "This site needs an access key.": "Questo sito ha bisogno di una chiave di accesso.",
+    "200 animals. One unusual fact on each page.": "200 animali. Un fatto insolito su ogni pagina.",
+    "Places, habits, a class quiz, people, and projects for Primary 1 to Primary 7.":
+      "Luoghi, abitudini, un quiz di classe, persone e progetti per Primaria 1 fino a Primaria 7.",
+    "Buy an access key at Every School Ever. Then type the key here.":
+      "Compra una chiave di accesso su Every School Ever. Poi scrivi la chiave qui.",
+    "Buy an access key": "Compra una chiave di accesso",
+    "Access key": "Chiave di accesso",
+    "Open the site": "Apri il sito",
+    "That key does not open the site.": "Questa chiave non apre il sito.",
+    Lock: "Blocca",
   },
   es: {
     "Every Animal Ever": "Todos los animales",
@@ -122,6 +177,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     Search: "Buscar",
     "Type an animal": "Escribe un animal",
     "Search animals by name": "Buscar un animal por su nombre",
+    "This site needs an access key.": "Este sitio necesita una clave de acceso.",
+    "200 animals. One unusual fact on each page.": "200 animales. Un dato raro en cada página.",
+    "Places, habits, a class quiz, people, and projects for Primary 1 to Primary 7.":
+      "Lugares, hábitos, un quiz de clase, personas y proyectos de Primaria 1 a Primaria 7.",
+    "Buy an access key at Every School Ever. Then type the key here.":
+      "Compra una clave de acceso en Every School Ever. Luego escribe la clave aquí.",
+    "Buy an access key": "Comprar una clave de acceso",
+    "Access key": "Clave de acceso",
+    "Open the site": "Abrir el sitio",
+    "That key does not open the site.": "Esa clave no abre el sitio.",
+    Lock: "Bloquear",
   },
   ru: {
     "Every Animal Ever": "Все животные",
@@ -142,5 +208,16 @@ export const ui: Record<Locale, Record<string, string>> = {
     Search: "Искать",
     "Type an animal": "Напиши животное",
     "Search animals by name": "Искать животное по имени",
+    "This site needs an access key.": "Этому сайту нужен ключ доступа.",
+    "200 animals. One unusual fact on each page.": "200 животных. На каждой странице одно необычное свойство.",
+    "Places, habits, a class quiz, people, and projects for Primary 1 to Primary 7.":
+      "Места, привычки, викторина для класса, люди и проекты с 1 по 7 класс.",
+    "Buy an access key at Every School Ever. Then type the key here.":
+      "Купи ключ доступа на сайте Every School Ever. Потом впиши ключ здесь.",
+    "Buy an access key": "Купить ключ доступа",
+    "Access key": "Ключ доступа",
+    "Open the site": "Открыть сайт",
+    "That key does not open the site.": "Этот ключ не открывает сайт.",
+    Lock: "Запереть",
   },
 };

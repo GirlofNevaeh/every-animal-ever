@@ -2,6 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useState } from "react";
 import { useI18n } from "@/i18n/context";
 import { localeLabel, localeShort, locales } from "@/i18n/locales";
+import { useAccess } from "@/lib/access";
 
 const NAV = [
   { to: "/", label: "Home" },
@@ -23,6 +24,7 @@ function active(path: string, to: string) {
 
 export function SiteHeader() {
   const { t, locale, setLocale } = useI18n();
+  const { open, lock } = useAccess();
   const path = useRouterState({ select: (state) => state.location.pathname });
   const [install, setInstall] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -44,6 +46,15 @@ export function SiteHeader() {
           >
             {localeShort[locale]}
           </button>
+          {open ? (
+            <button
+              type="button"
+              onClick={() => void lock()}
+              className="h-10 shrink-0 rounded-card border-2 border-ink bg-sand px-2 text-xs font-extrabold text-ink sm:text-sm"
+            >
+              {t("Lock")}
+            </button>
+          ) : null}
           <button
             type="button"
             onClick={() => setInstall(true)}
@@ -53,6 +64,7 @@ export function SiteHeader() {
           </button>
         </div>
       </div>
+      {open ? (
       <nav aria-label={t("Pages")} className="mx-auto grid max-w-5xl grid-cols-5 gap-1 px-2 pb-2 sm:grid-cols-10">
         {NAV.map((item) => {
           const on = active(path, item.to);
@@ -69,6 +81,7 @@ export function SiteHeader() {
           );
         })}
       </nav>
+      ) : null}
       {langOpen ? (
         <div className="fixed inset-0 z-50 flex items-end justify-center bg-ink/50 p-3 sm:items-center">
           <div
