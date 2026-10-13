@@ -2,7 +2,7 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { AnimalCard } from "@/components/animal-card";
 import { Portrait, PhotoCredit } from "@/components/portrait";
 import { SearchForm } from "@/components/search-form";
-import { animals, getAnimal } from "@/data/animals";
+import { animals } from "@/data/animals";
 import { groupLabel, groups, habitatLabel, habitats } from "@/data/labels";
 import { people } from "@/data/people";
 import { useI18n } from "@/i18n/context";
@@ -11,10 +11,17 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
+function animalOfTheDay() {
+  const now = new Date();
+  const day = Math.floor(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) / 86_400_000);
+  const index = ((day % animals.length) + animals.length) % animals.length;
+  return animals[index] ?? animals[0];
+}
+
 function Home() {
   const { t } = useI18n();
   const navigate = useNavigate();
-  const hero = getAnimal("african-elephant") ?? animals[0];
+  const hero = animalOfTheDay();
   const favourites = animals.filter((animal) => animal.favourite).slice(0, 8);
   const facts = animals.filter((animal) => animal.favourite).slice(0, 10);
 

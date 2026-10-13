@@ -39,17 +39,16 @@ function SheetPage() {
 }
 
 function MapSheet() {
-  const { t, fill } = useI18n();
+  const { t } = useI18n();
   return (
     <article className="mt-4 rounded-card border-2 border-ink bg-sand p-4">
       <h1 className="font-display text-4xl">{t("Habitat map")}</h1>
-      <p className="mt-1">{t("Write the place name. Add one animal that lives there.")}</p>
+      <p className="mt-1">{t("The place is named in each box. Write one animal that lives there.")}</p>
       <div className="mt-4 grid grid-cols-2 gap-3">
-        {habitats.map((habitat, index) => (
+        {habitats.map((habitat) => (
           <div key={habitat} className="rounded-card border-2 border-dashed border-ink p-3">
-            <p className="text-sm font-extrabold">{fill("Place {{n}}", { n: index + 1 })}</p>
-            <p className="mt-6 border-b-2 border-ink/40">{t(habitatLabel[habitat]) ? "" : ""}</p>
-            <p className="mt-4 text-sm">{t("Name: ____________________")}</p>
+            <p className="font-display text-2xl">{t(habitatLabel[habitat])}</p>
+            <p className="mt-6 border-b-2 border-ink/40">&nbsp;</p>
             <p className="mt-2 text-sm">{t("Animal: __________________")}</p>
           </div>
         ))}

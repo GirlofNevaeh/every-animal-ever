@@ -57,6 +57,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Enter key": "Cuir a-steach an iuchair",
     "That key does not work. Check it and try again.":
       "Chan eil an iuchair sin ag obair. Thoir sùil oirre agus feuch a-rithist.",
+    "The place is named in each box. Write one animal that lives there.":
+      "Tha an t-àite ainmichte anns gach bogsa. Sgrìobh aon bheathach a tha a' fuireach ann.",
     "There are 250 questions. Each game uses 10 or 25 of them.":
       "Tha 250 ceist ann. Bidh gach geama a’ cleachdadh 10 no 25 dhiubh.",
     Lock: "Glas",
@@ -118,6 +120,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Enter key": "Rhowch yr allwedd",
     "That key does not work. Check it and try again.":
       "Nid yw'r allwedd honno'n gweithio. Gwiriwch hi a rhowch gynnig arall.",
+    "The place is named in each box. Write one animal that lives there.":
+      "Mae enw'r lle ym mhob blwch. Ysgrifennwch un anifail sy'n byw yno.",
     Lock: "Cloi",
   },
   ga: {
@@ -174,6 +178,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Enter key": "Cuir isteach an eochair",
     "That key does not work. Check it and try again.":
       "Ní oibríonn an eochair sin. Seiceáil í agus bain triail eile as.",
+    "The place is named in each box. Write one animal that lives there.":
+      "Tá ainm na háite i ngach bosca. Scríobh ainmhí amháin a chónaíonn ann.",
     "There are 250 questions. Each game uses 10 or 25 of them.":
       "Tá 250 ceist ann. Úsáideann gach cluiche 10 nó 25 acu.",
     Lock: "Glasáil",
@@ -232,6 +238,8 @@ export const ui: Record<Locale, Record<string, string>> = {
       "Achète une clé d'accès sur Every School Ever. Puis reviens et tape-la ici.",
     "Enter key": "Entrer la clé",
     "That key does not work. Check it and try again.": "Cette clé ne marche pas. Vérifie-la et réessaie.",
+    "The place is named in each box. Write one animal that lives there.":
+      "Le lieu est écrit dans chaque case. Écris un animal qui y vit.",
     Lock: "Verrouiller",
   },
   it: {
@@ -288,6 +296,8 @@ export const ui: Record<Locale, Record<string, string>> = {
       "Compra una chiave di accesso su Every School Ever. Poi torna e scrivila qui.",
     "Enter key": "Inserisci la chiave",
     "That key does not work. Check it and try again.": "Questa chiave non funziona. Controllala e riprova.",
+    "The place is named in each box. Write one animal that lives there.":
+      "Il luogo è scritto in ogni riquadro. Scrivi un animale che ci vive.",
     Lock: "Blocca",
   },
   es: {
@@ -344,6 +354,8 @@ export const ui: Record<Locale, Record<string, string>> = {
       "Compra una clave de acceso en Every School Ever. Luego vuelve y escríbela aquí.",
     "Enter key": "Entrar la clave",
     "That key does not work. Check it and try again.": "Esa clave no funciona. Revísala e inténtalo otra vez.",
+    "The place is named in each box. Write one animal that lives there.":
+      "El lugar está escrito en cada caja. Escribe un animal que viva ahí.",
     Lock: "Bloquear",
   },
   ru: {
@@ -400,6 +412,8 @@ export const ui: Record<Locale, Record<string, string>> = {
       "Купи ключ доступа на сайте Every School Ever. Потом вернись и впиши его здесь.",
     "Enter key": "Ввести ключ",
     "That key does not work. Check it and try again.": "Этот ключ не подходит. Проверь его и попробуй ещё раз.",
+    "The place is named in each box. Write one animal that lives there.":
+      "Место названо в каждой рамке. Напиши одно животное, которое там живёт.",
     Lock: "Запереть",
   },
 };

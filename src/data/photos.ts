@@ -23,7 +23,7 @@ export const photos: Record<string, Photo> = {
   },
   "horse": {
     src: "/photos/horse.jpg",
-    author: "Nokota_Horses.jpg : Fran\u00e7ois Marchal derivative work: Dana boomer ( talk )",
+    author: "François Marchal, crop by Dana Boomer",
     license: "CC BY-SA 3.0",
     licenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/",
     source: "https://commons.wikimedia.org/wiki/File:Nokota_Horses_cropped.jpg",
@@ -93,7 +93,7 @@ export const photos: Record<string, Photo> = {
   },
   "grey-wolf": {
     src: "/photos/grey-wolf.jpg",
-    author: "User:Mas3cf",
+    author: "Mas3cf",
     license: "CC BY-SA 4.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
     source: "https://commons.wikimedia.org/wiki/File:Eurasian_wolf_2.jpg",
@@ -716,14 +716,14 @@ export const photos: Record<string, Photo> = {
   },
   "american-alligator": {
     src: "/photos/american-alligator.jpg",
-    author: "User:Postdlf",
+    author: "Postdlf",
     license: "CC BY-SA 3.0",
     licenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/",
     source: "https://commons.wikimedia.org/wiki/File:American_Alligator.jpg",
   },
   "ball-python": {
     src: "/photos/ball-python.jpg",
-    author: "HCA ( talk )",
+    author: "HCA",
     license: "CC BY-SA 3.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
     source: "https://commons.wikimedia.org/wiki/File:Ball_python_lucy.JPG",
@@ -849,7 +849,7 @@ export const photos: Record<string, Photo> = {
   },
   "thorny-devil": {
     src: "/photos/thorny-devil.jpg",
-    author: "B\u00e4ras ( talk \u00b7 contribs )",
+    author: "Bäras",
     license: "CC BY-SA 3.0",
     licenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/",
     source: "https://commons.wikimedia.org/wiki/File:Thornydevil.jpg",
@@ -1178,7 +1178,7 @@ export const photos: Record<string, Photo> = {
   },
   "seven-spot-ladybug": {
     src: "/photos/seven-spot-ladybug.jpg",
-    author: "Photographer: Dominik Stodulski Graphic Processing: User:MathKnight",
+    author: "Dominik Stodulski, processed by MathKnight",
     license: "CC BY-SA 3.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
     source: "https://commons.wikimedia.org/wiki/File:7-Spotted-Ladybug-Coccinella-septempunctata-sq1.jpg",
@@ -1388,7 +1388,7 @@ export const photos: Record<string, Photo> = {
   },
   "red-eyed-tree-frog": {
     src: "/photos/red-eyed-tree-frog.png",
-    author: "Red-eyed Tree Frog (Agalychnis callidryas) 3.jpg : Geoff Gallice from Gainesville, FL, USA derivative work: B ",
+    author: "Geoff Gallice",
     license: "CC BY 2.0",
     licenseUrl: "https://creativecommons.org/licenses/by/2.0",
     source: "https://commons.wikimedia.org/wiki/File:Red-eyed_Tree_Frog_(Agalychnis_callidryas)_1.png",
