@@ -24,7 +24,7 @@ export function Paywall() {
   return (
     <main className="mx-auto grid max-w-3xl gap-4 px-4 py-8">
       <section className="rounded-card border-2 border-ink bg-leaf p-5 text-sand">
-        <p className="font-extrabold text-sand">{t("Ages 5–12")}</p>
+        <p className="font-extrabold text-sand">{t("Age 5-12")}</p>
         <h1 className="mt-2 font-display text-4xl sm:text-5xl">{t("Every Animal Ever")}</h1>
         <p className="mt-3 text-lg font-extrabold">{t("A bright guide to animals for children.")}</p>
         <p className="mt-2 font-bold">

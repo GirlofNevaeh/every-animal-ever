@@ -26,13 +26,13 @@ export type Project = {
 };
 
 export const stages: Stage[] = [
-  { id: "p1", label: "Age 5-6", short: "Age 5-6", age: "Age 5-6", focus: "Names, pictures, and sorting" },
-  { id: "p2", label: "Age 6-7", short: "Age 6-7", age: "Age 6-7", focus: "Homes and places" },
-  { id: "p3", label: "Age 7-8", short: "Age 7-8", age: "Age 7-8", focus: "Short, clear sentences" },
-  { id: "p4", label: "Age 8-9", short: "Age 8-9", age: "Age 8-9", focus: "Maps, groups, and questions" },
-  { id: "p5", label: "Age 9-10", short: "Age 9-10", age: "Age 9-10", focus: "Compare and put in order" },
-  { id: "p6", label: "Age 10-11", short: "Age 10-11", age: "Age 10-11", focus: "Careful notes and a plan" },
-  { id: "p7", label: "Age 11-12", short: "Age 11-12", age: "Age 11-12", focus: "Explain and lead" },
+  { id: "p1", label: "Age 5-12", short: "Age 5-6", age: "Age 5-6", focus: "Names, pictures, and sorting" },
+  { id: "p2", label: "Age 5-12", short: "Age 6-7", age: "Age 6-7", focus: "Homes and places" },
+  { id: "p3", label: "Age 5-12", short: "Age 7-8", age: "Age 7-8", focus: "Short, clear sentences" },
+  { id: "p4", label: "Age 5-12", short: "Age 8-9", age: "Age 8-9", focus: "Maps, groups, and questions" },
+  { id: "p5", label: "Age 5-12", short: "Age 9-10", age: "Age 9-10", focus: "Compare and put in order" },
+  { id: "p6", label: "Age 5-12", short: "Age 10-11", age: "Age 10-11", focus: "Careful notes and a plan" },
+  { id: "p7", label: "Age 5-12", short: "Age 11-12", age: "Age 11-12", focus: "Explain and lead" },
 ];
 
 export const kindLabel: Record<ProjectKind, string> = {

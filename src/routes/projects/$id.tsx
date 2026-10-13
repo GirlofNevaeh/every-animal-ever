@@ -31,7 +31,7 @@ function ProjectPage() {
           search={{ stage: project.stage, kind: "" }}
           className="inline-flex h-11 items-center font-extrabold text-leaf"
         >
-          {fill("All {{stage}}", { stage: t(stage.label) })}
+          {fill("All {{stage}}", { stage: t(stage.short) })}
         </Link>
         <button
           type="button"
