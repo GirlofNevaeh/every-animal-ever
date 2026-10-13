@@ -17,8 +17,12 @@ import { Route as QuizRouteImport } from './routes/quiz'
 import { Route as TimeRouteImport } from './routes/time'
 import { Route as AnimalsIndexRouteImport } from './routes/animals/index'
 import { Route as AnimalsSlugRouteImport } from './routes/animals/$slug'
+import { Route as PeopleIndexRouteImport } from './routes/people/index'
+import { Route as PeopleSlugRouteImport } from './routes/people/$slug'
 import { Route as PlacesIndexRouteImport } from './routes/places/index'
 import { Route as PlacesHabitatRouteImport } from './routes/places/$habitat'
+import { Route as ProjectsIndexRouteImport } from './routes/projects/index'
+import { Route as ProjectsIdRouteImport } from './routes/projects/$id'
 import { Route as WorkIndexRouteImport } from './routes/work/index'
 import { Route as WorkSheetRouteImport } from './routes/work/$sheet'
 
@@ -62,6 +66,16 @@ const AnimalsSlugRoute = AnimalsSlugRouteImport.update({
   path: '/animals/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PeopleIndexRoute = PeopleIndexRouteImport.update({
+  id: '/people/',
+  path: '/people/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PeopleSlugRoute = PeopleSlugRouteImport.update({
+  id: '/people/$slug',
+  path: '/people/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PlacesIndexRoute = PlacesIndexRouteImport.update({
   id: '/places/',
   path: '/places/',
@@ -70,6 +84,16 @@ const PlacesIndexRoute = PlacesIndexRouteImport.update({
 const PlacesHabitatRoute = PlacesHabitatRouteImport.update({
   id: '/places/$habitat',
   path: '/places/$habitat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProjectsIndexRoute = ProjectsIndexRouteImport.update({
+  id: '/projects/',
+  path: '/projects/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProjectsIdRoute = ProjectsIdRouteImport.update({
+  id: '/projects/$id',
+  path: '/projects/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
 const WorkIndexRoute = WorkIndexRouteImport.update({
@@ -91,10 +115,14 @@ export interface FileRoutesByFullPath {
   '/quiz': typeof QuizRoute
   '/time': typeof TimeRoute
   '/animals/$slug': typeof AnimalsSlugRoute
+  '/people/$slug': typeof PeopleSlugRoute
   '/places/$habitat': typeof PlacesHabitatRoute
+  '/projects/$id': typeof ProjectsIdRoute
   '/work/$sheet': typeof WorkSheetRoute
   '/animals/': typeof AnimalsIndexRoute
+  '/people/': typeof PeopleIndexRoute
   '/places/': typeof PlacesIndexRoute
+  '/projects/': typeof ProjectsIndexRoute
   '/work/': typeof WorkIndexRoute
 }
 export interface FileRoutesByTo {
@@ -105,10 +133,14 @@ export interface FileRoutesByTo {
   '/quiz': typeof QuizRoute
   '/time': typeof TimeRoute
   '/animals/$slug': typeof AnimalsSlugRoute
+  '/people/$slug': typeof PeopleSlugRoute
   '/places/$habitat': typeof PlacesHabitatRoute
+  '/projects/$id': typeof ProjectsIdRoute
   '/work/$sheet': typeof WorkSheetRoute
   '/animals': typeof AnimalsIndexRoute
+  '/people': typeof PeopleIndexRoute
   '/places': typeof PlacesIndexRoute
+  '/projects': typeof ProjectsIndexRoute
   '/work': typeof WorkIndexRoute
 }
 export interface FileRoutesById {
@@ -120,10 +152,14 @@ export interface FileRoutesById {
   '/quiz': typeof QuizRoute
   '/time': typeof TimeRoute
   '/animals/$slug': typeof AnimalsSlugRoute
+  '/people/$slug': typeof PeopleSlugRoute
   '/places/$habitat': typeof PlacesHabitatRoute
+  '/projects/$id': typeof ProjectsIdRoute
   '/work/$sheet': typeof WorkSheetRoute
   '/animals/': typeof AnimalsIndexRoute
+  '/people/': typeof PeopleIndexRoute
   '/places/': typeof PlacesIndexRoute
+  '/projects/': typeof ProjectsIndexRoute
   '/work/': typeof WorkIndexRoute
 }
 export interface FileRouteTypes {
@@ -136,10 +172,14 @@ export interface FileRouteTypes {
     | '/quiz'
     | '/time'
     | '/animals/$slug'
+    | '/people/$slug'
     | '/places/$habitat'
+    | '/projects/$id'
     | '/work/$sheet'
     | '/animals/'
+    | '/people/'
     | '/places/'
+    | '/projects/'
     | '/work/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -150,10 +190,14 @@ export interface FileRouteTypes {
     | '/quiz'
     | '/time'
     | '/animals/$slug'
+    | '/people/$slug'
     | '/places/$habitat'
+    | '/projects/$id'
     | '/work/$sheet'
     | '/animals'
+    | '/people'
     | '/places'
+    | '/projects'
     | '/work'
   id:
     | '__root__'
@@ -164,10 +208,14 @@ export interface FileRouteTypes {
     | '/quiz'
     | '/time'
     | '/animals/$slug'
+    | '/people/$slug'
     | '/places/$habitat'
+    | '/projects/$id'
     | '/work/$sheet'
     | '/animals/'
+    | '/people/'
     | '/places/'
+    | '/projects/'
     | '/work/'
   fileRoutesById: FileRoutesById
 }
@@ -179,10 +227,14 @@ export interface RootRouteChildren {
   QuizRoute: typeof QuizRoute
   TimeRoute: typeof TimeRoute
   AnimalsSlugRoute: typeof AnimalsSlugRoute
+  PeopleSlugRoute: typeof PeopleSlugRoute
   PlacesHabitatRoute: typeof PlacesHabitatRoute
+  ProjectsIdRoute: typeof ProjectsIdRoute
   WorkSheetRoute: typeof WorkSheetRoute
   AnimalsIndexRoute: typeof AnimalsIndexRoute
+  PeopleIndexRoute: typeof PeopleIndexRoute
   PlacesIndexRoute: typeof PlacesIndexRoute
+  ProjectsIndexRoute: typeof ProjectsIndexRoute
   WorkIndexRoute: typeof WorkIndexRoute
 }
 
@@ -244,6 +296,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AnimalsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/people/': {
+      id: '/people/'
+      path: '/people'
+      fullPath: '/people/'
+      preLoaderRoute: typeof PeopleIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/people/$slug': {
+      id: '/people/$slug'
+      path: '/people/$slug'
+      fullPath: '/people/$slug'
+      preLoaderRoute: typeof PeopleSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/places/': {
       id: '/places/'
       path: '/places'
@@ -256,6 +322,20 @@ declare module '@tanstack/react-router' {
       path: '/places/$habitat'
       fullPath: '/places/$habitat'
       preLoaderRoute: typeof PlacesHabitatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects/': {
+      id: '/projects/'
+      path: '/projects'
+      fullPath: '/projects/'
+      preLoaderRoute: typeof ProjectsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects/$id': {
+      id: '/projects/$id'
+      path: '/projects/$id'
+      fullPath: '/projects/$id'
+      preLoaderRoute: typeof ProjectsIdRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/work/': {
@@ -283,10 +363,14 @@ const rootRouteChildren: RootRouteChildren = {
   QuizRoute: QuizRoute,
   TimeRoute: TimeRoute,
   AnimalsSlugRoute: AnimalsSlugRoute,
+  PeopleSlugRoute: PeopleSlugRoute,
   PlacesHabitatRoute: PlacesHabitatRoute,
+  ProjectsIdRoute: ProjectsIdRoute,
   WorkSheetRoute: WorkSheetRoute,
   AnimalsIndexRoute: AnimalsIndexRoute,
+  PeopleIndexRoute: PeopleIndexRoute,
   PlacesIndexRoute: PlacesIndexRoute,
+  ProjectsIndexRoute: ProjectsIndexRoute,
   WorkIndexRoute: WorkIndexRoute,
 }
 export const routeTree = rootRouteImport

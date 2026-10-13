@@ -1,5 +1,6 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { habitatLabel, habitatShort, habitats, type Habitat } from "@/data/labels";
+import { useI18n } from "@/i18n/context";
 
 export const Route = createFileRoute("/places/")({
   component: PlacesPage,
@@ -19,10 +20,11 @@ const spots: { id: Habitat; className: string; scene: string }[] = [
 ];
 
 function PlacesPage() {
+  const { t } = useI18n();
   return (
     <main className="mx-auto max-w-5xl px-3 py-4">
-      <h1 className="font-display text-4xl">Places</h1>
-      <p className="mt-1 max-w-xl text-lg">Tap a place. See animals that live there.</p>
+      <h1 className="font-display text-4xl">{t("Places")}</h1>
+      <p className="mt-1 max-w-xl text-lg">{t("Tap a place. See animals that live there.")}</p>
 
       <div className="relative mt-4 aspect-[3/4] w-full overflow-hidden rounded-card border-2 border-ink bg-sky sm:aspect-video">
         <div className="absolute inset-x-0 top-0 h-[18%] bg-sand/80" />
@@ -38,7 +40,7 @@ function PlacesPage() {
             params={{ habitat: spot.id }}
             className={`absolute flex h-12 items-center justify-center rounded-card border-2 border-ink px-1 text-center text-sm leading-tight font-extrabold ${spot.className} ${spot.scene}`}
           >
-            {habitatShort[spot.id]}
+            {t(habitatShort[spot.id])}
           </Link>
         ))}
       </div>
@@ -51,7 +53,7 @@ function PlacesPage() {
               params={{ habitat }}
               className="flex h-11 items-center justify-center rounded-card border-2 border-ink bg-sand px-2 text-center text-sm font-extrabold"
             >
-              {habitatLabel[habitat]}
+              {t(habitatLabel[habitat])}
             </Link>
           </li>
         ))}

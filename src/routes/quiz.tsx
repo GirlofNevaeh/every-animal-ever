@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { animals } from "@/data/animals";
 import type { Animal } from "@/data/types";
+import { useI18n } from "@/i18n/context";
 
 export const Route = createFileRoute("/quiz")({
   component: QuizPage,
@@ -38,6 +39,7 @@ function makeCard(animal: Animal): Card {
 }
 
 function QuizPage() {
+  const { t, fill } = useI18n();
   const [phase, setPhase] = useState<Phase>("setup");
   const [mode, setMode] = useState<Mode>("10");
   const [teamCount, setTeamCount] = useState(2);
@@ -182,7 +184,7 @@ function QuizPage() {
 
   return (
     <main className="mx-auto max-w-3xl px-3 py-4">
-      <h1 className="font-display text-4xl">Quiz</h1>
+      <h1 className="font-display text-4xl">{t("Quiz")}</h1>
       {phase === "setup" ? (
         <Setup
           mode={mode}
@@ -199,10 +201,10 @@ function QuizPage() {
         <section className="mt-4 rounded-card border-2 border-ink bg-sky p-4">
           <p className="text-sm font-extrabold">
             {phase === "sudden" || phase === "sudden-feedback"
-              ? `Sudden death · tied round ${cleanTies + 1}`
-              : `Question ${index + 1} of ${deck.length}`}
+              ? fill("Sudden death · tied round {{n}}", { n: cleanTies + 1 })
+              : fill("Question {{n}} of {{total}}", { n: index + 1, total: deck.length })}
           </p>
-          <h2 className="mt-2 font-display text-3xl">{card.prompt}</h2>
+          <h2 className="mt-2 font-display text-3xl">{t(card.prompt)}</h2>
           {solo ? (
             <div className="mt-4 grid gap-2">
               {card.choices.map((choice) => (
@@ -219,7 +221,7 @@ function QuizPage() {
                         : "border-ink bg-sand"
                   }`}
                 >
-                  {choice}
+                  {t(choice)}
                 </button>
               ))}
             </div>
@@ -229,7 +231,7 @@ function QuizPage() {
                 {card.choices.map((choice, choiceIndex) => (
                   <li key={choice}>
                     <span className="font-extrabold">{String.fromCharCode(65 + choiceIndex)}. </span>
-                    {choice}
+                    {t(choice)}
                   </li>
                 ))}
               </ul>
@@ -238,7 +240,7 @@ function QuizPage() {
                   .filter((team) => phase === "play" || phase === "feedback" || contenders.includes(team.id))
                   .map((team) => (
                     <div key={team.id} className="rounded-card bg-sand p-2">
-                      <p className="text-sm font-extrabold">{team.name}</p>
+                      <p className="text-sm font-extrabold">{t(team.name)}</p>
                       <div className="mt-1 grid grid-cols-2 gap-1">
                         {card.choices.map((choice, choiceIndex) => {
                           const picked = picks[team.id] === choice;
@@ -272,9 +274,9 @@ function QuizPage() {
             <p className="mt-3 font-extrabold">
               {solo
                 ? soloPick === card.correct
-                  ? "Yes."
-                  : `Not this time. ${card.correct}`
-                : `Answer: ${card.correct}`}
+                  ? t("Yes.")
+                  : fill("Not this time. {{answer}}", { answer: t(card.correct) })
+                : fill("Answer: {{answer}}", { answer: t(card.correct) })}
             </p>
           ) : null}
         </section>
@@ -315,9 +317,10 @@ function Setup({
   setTeamCount: (count: number) => void;
   onStart: () => void;
 }) {
+  const { t, fill } = useI18n();
   return (
     <section className="mt-4 rounded-card border-2 border-ink bg-sand p-4">
-      <h2 className="font-display text-2xl">Class quiz</h2>
+      <h2 className="font-display text-2xl">{t("Class quiz")}</h2>
       <div className="mt-3 grid grid-cols-2 gap-2">
         <Pick on={mode === "10"} label="Quick 10" onClick={() => setMode("10")} />
         <Pick on={mode === "25"} label="Mega 25" onClick={() => setMode("25")} />
@@ -326,8 +329,8 @@ function Setup({
       </div>
       {solo ? null : (
         <label className="mt-4 block text-sm font-extrabold">
-          Teams: {teamCount}
-          <span className="mt-1 block font-bold">Up to 4 players share a team. Up to 10 teams.</span>
+          {fill("Teams: {{count}}", { count: teamCount })}
+          <span className="mt-1 block font-bold">{t("Up to 4 players share a team. Up to 10 teams.")}</span>
           <input
             type="range"
             min={2}
@@ -343,30 +346,32 @@ function Setup({
         onClick={onStart}
         className="mt-4 h-12 w-full rounded-card border-2 border-ink bg-leaf font-extrabold text-sand"
       >
-        Start
+        {t("Start")}
       </button>
     </section>
   );
 }
 
 function Pick({ on, label, onClick }: { on: boolean; label: string; onClick: () => void }) {
+  const { t } = useI18n();
   return (
     <button
       type="button"
       onClick={onClick}
       className={`h-12 rounded-card border-2 font-extrabold text-ink ${on ? "border-leaf bg-sand" : "border-ink/20 bg-sand"}`}
     >
-      {label}
+      {t(label)}
     </button>
   );
 }
 
 function Scoreboard({ teams }: { teams: Team[] }) {
+  const { t } = useI18n();
   return (
     <ul className="mt-4 grid grid-cols-2 gap-2">
       {teams.map((team) => (
         <li key={team.id} className="rounded-card border-2 border-ink bg-sand px-3 py-2">
-          <span className="block text-sm font-extrabold">{team.name}</span>
+          <span className="block text-sm font-extrabold">{t(team.name)}</span>
           <span className="font-display text-3xl tabular-nums">{team.score}</span>
         </li>
       ))}
@@ -389,32 +394,35 @@ function Done({
   draw: boolean;
   onAgain: () => void;
 }) {
+  const { t, fill } = useI18n();
   const winner = teams.find((team) => team.id === winnerId);
   const sorted = useMemo(() => [...teams].sort((a, b) => b.score - a.score), [teams]);
   return (
     <section className="mt-4 rounded-card border-2 border-ink bg-leaf p-4 text-sand">
       {solo ? (
         <>
-          <h2 className="font-display text-3xl">You got {teams[0]?.score ?? 0} out of {total}.</h2>
-          <p className="mt-2">That round is done.</p>
+          <h2 className="font-display text-3xl">
+            {fill("You got {{score}} out of {{total}}.", { score: teams[0]?.score ?? 0, total })}
+          </h2>
+          <p className="mt-2">{t("That round is done.")}</p>
         </>
       ) : draw ? (
         <>
-          <h2 className="font-display text-3xl">It is a draw.</h2>
-          <p className="mt-2">Three sudden-death rounds stayed tied.</p>
+          <h2 className="font-display text-3xl">{t("It is a draw.")}</h2>
+          <p className="mt-2">{t("Three sudden-death rounds stayed tied.")}</p>
         </>
       ) : winner ? (
         <>
-          <p className="text-sm font-extrabold tracking-wide">CONGRATULATIONS</p>
-          <h2 className="font-display text-4xl">{winner.name} wins.</h2>
+          <p className="text-sm font-extrabold tracking-wide">{t("CONGRATULATIONS")}</p>
+          <h2 className="font-display text-4xl">{fill("{{name}} wins.", { name: t(winner.name) })}</h2>
         </>
       ) : (
-        <h2 className="font-display text-3xl">Round over.</h2>
+        <h2 className="font-display text-3xl">{t("Round over.")}</h2>
       )}
       <ul className="mt-3 space-y-1">
         {sorted.map((team) => (
           <li key={team.id}>
-            {team.name}: {team.score}
+            {t(team.name)}: {team.score}
           </li>
         ))}
       </ul>
@@ -423,7 +431,7 @@ function Done({
         onClick={onAgain}
         className="mt-4 h-12 w-full rounded-card border-2 border-ink bg-sand font-extrabold text-ink"
       >
-        Play again
+        {t("Play again")}
       </button>
     </section>
   );

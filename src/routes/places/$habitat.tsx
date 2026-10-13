@@ -2,20 +2,14 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { AnimalCard } from "@/components/animal-card";
 import { filterAnimals } from "@/data/animals";
 import { habitatLabel, isHabitat } from "@/data/labels";
+import { useI18n } from "@/i18n/context";
 
 export const Route = createFileRoute("/places/$habitat")({
   loader: ({ params }) => {
     if (!isHabitat(params.habitat)) throw notFound();
     return params.habitat;
   },
-  notFoundComponent: () => (
-    <main className="px-4 py-8">
-      <h1 className="font-display text-3xl">That place is not on the map</h1>
-      <Link to="/places" className="mt-3 inline-flex font-extrabold text-leaf">
-        Back to Places
-      </Link>
-    </main>
-  ),
+  notFoundComponent: MissingPlace,
   component: HabitatPage,
 });
 
@@ -33,22 +27,39 @@ const blurbs: Record<string, string> = {
 };
 
 function HabitatPage() {
+  const { t, fill } = useI18n();
   const habitat = Route.useLoaderData();
   const list = filterAnimals("", "", habitat);
 
   return (
     <main className="mx-auto max-w-5xl px-3 py-4">
       <Link to="/places" className="text-sm font-extrabold text-leaf">
-        All places
+        {t("All places")}
       </Link>
-      <h1 className="mt-2 font-display text-4xl">{habitatLabel[habitat]}</h1>
-      <p className="mt-2 max-w-xl text-lg">{blurbs[habitat]}</p>
-      <p className="mt-2 text-sm font-bold">{list.length} animals live here.</p>
+      <h1 className="mt-2 font-display text-4xl">{t(habitatLabel[habitat])}</h1>
+      <p className="mt-2 max-w-xl text-lg">{t(blurbs[habitat])}</p>
+      <p className="mt-2 text-sm font-bold">
+        {list.length === 1
+          ? t("1 animal lives here.")
+          : fill("{{count}} animals live here.", { count: list.length })}
+      </p>
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
         {list.map((animal) => (
           <AnimalCard key={animal.slug} animal={animal} />
         ))}
       </div>
+    </main>
+  );
+}
+
+function MissingPlace() {
+  const { t } = useI18n();
+  return (
+    <main className="px-4 py-8">
+      <h1 className="font-display text-3xl">{t("That place is not on the map")}</h1>
+      <Link to="/places" className="mt-3 inline-flex font-extrabold text-leaf">
+        {t("Back to Places")}
+      </Link>
     </main>
   );
 }

@@ -1,5 +1,5 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
-import { projects } from "@/data/projects";
+import { useI18n } from "@/i18n/context";
 
 export const Route = createFileRoute("/work/")({
   component: WorkPage,
@@ -12,10 +12,11 @@ const sheets = [
 ];
 
 function WorkPage() {
+  const { t } = useI18n();
   return (
     <main className="mx-auto max-w-5xl px-3 py-4">
-      <h1 className="font-display text-4xl">Work</h1>
-      <p className="mt-1 text-lg">Print a page, or pick a project.</p>
+      <h1 className="font-display text-4xl">{t("Work")}</h1>
+      <p className="mt-1 text-lg">{t("Print a page. Class projects are on the Projects tab.")}</p>
       <div className="mt-4 grid gap-3 sm:grid-cols-3">
         {sheets.map((sheet) => (
           <Link
@@ -24,31 +25,19 @@ function WorkPage() {
             params={{ sheet: sheet.id }}
             className="rounded-card border-2 border-ink bg-sand p-4 shadow-[4px_4px_0_#121212]"
           >
-            <h2 className="font-display text-2xl">{sheet.title}</h2>
-            <p className="mt-2 text-sm">{sheet.text}</p>
+            <h2 className="font-display text-2xl">{t(sheet.title)}</h2>
+            <p className="mt-2 text-sm">{t(sheet.text)}</p>
           </Link>
         ))}
       </div>
-      <h2 className="mt-8 font-display text-3xl">Primary 1 to Primary 7</h2>
-      <div className="mt-3 grid gap-3">
-        {projects.map((project) => (
-          <Link
-            key={project.id}
-            to="/work/$sheet"
-            params={{ sheet: project.id }}
-            className="grid gap-1 rounded-card border-2 border-leaf bg-sand p-4 sm:grid-cols-[140px_1fr]"
-          >
-            <span>
-              <span className="block font-display text-2xl">{project.stage}</span>
-              <span className="text-sm font-bold">{project.age}</span>
-            </span>
-            <span>
-              <span className="block font-extrabold">On your own: {project.solo.title}</span>
-              <span className="block font-extrabold">With a team: {project.team.title}</span>
-            </span>
-          </Link>
-        ))}
-      </div>
+      <Link
+        to="/projects"
+        search={{ stage: "", kind: "" }}
+        className="mt-6 block rounded-card border-2 border-leaf bg-sand p-4"
+      >
+        <span className="block font-display text-3xl">{t("Projects")}</span>
+        <span className="mt-1 block font-bold">{t("On your own and with a team. Primary 1 to Primary 7.")}</span>
+      </Link>
     </main>
   );
 }

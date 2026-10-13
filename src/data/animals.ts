@@ -28,7 +28,12 @@ export function getAnimal(slug: string) {
   return animals.find((animal) => animal.slug === slug);
 }
 
-export function filterAnimals(q: string, group: string, habitat: string) {
+export function filterAnimals(
+  q: string,
+  group: string,
+  habitat: string,
+  translate?: (text: string) => string,
+) {
   const selectedGroup: Group | "" = isGroup(group) ? group : "";
   const selectedHabitat: Habitat | "" = isHabitat(habitat) ? habitat : "";
   const words = q.trim().toLowerCase().split(/\s+/).filter(Boolean);
@@ -36,13 +41,20 @@ export function filterAnimals(q: string, group: string, habitat: string) {
     if (selectedGroup && animal.group !== selectedGroup) return false;
     if (selectedHabitat && !animal.habitats.includes(selectedHabitat)) return false;
     if (words.length === 0) return true;
+    const tr = translate ?? ((text: string) => text);
     const hay = [
       animal.name,
+      tr(animal.name),
       animal.slug.replaceAll("-", " "),
       groupLabel[animal.group],
+      tr(groupLabel[animal.group]),
       animal.group,
+      animal.fact,
+      tr(animal.fact),
+      animal.where,
+      tr(animal.where),
       ...animal.aka,
-      ...animal.habitats.map((item) => habitatLabel[item]),
+      ...animal.habitats.flatMap((item) => [habitatLabel[item], tr(habitatLabel[item])]),
     ]
       .join(" ")
       .toLowerCase();

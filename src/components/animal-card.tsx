@@ -2,8 +2,10 @@ import { Link } from "@tanstack/react-router";
 import type { Animal } from "@/data/types";
 import { groupOne } from "@/data/labels";
 import { Portrait } from "@/components/portrait";
+import { useI18n } from "@/i18n/context";
 
 export function AnimalCard({ animal }: { animal: Animal }) {
+  const { t } = useI18n();
   return (
     <Link
       to="/animals/$slug"
@@ -12,9 +14,9 @@ export function AnimalCard({ animal }: { animal: Animal }) {
     >
       <Portrait animal={animal} className="size-20 shrink-0" />
       <span className="min-w-0">
-        <span className="block font-display text-xl leading-tight">{animal.name}</span>
-        <span className="block text-sm font-extrabold text-leaf">{groupOne[animal.group]}</span>
-        <span className="mt-1 block text-sm leading-snug">{animal.fact}</span>
+        <span className="block font-display text-xl leading-tight">{t(animal.name)}</span>
+        <span className="block text-sm font-extrabold text-leaf">{t(groupOne[animal.group])}</span>
+        <span className="mt-1 block text-sm leading-snug">{t(animal.fact)}</span>
       </span>
     </Link>
   );

@@ -1,5 +1,6 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { useI18n } from "@/i18n/context";
 
 export const Route = createFileRoute("/time")({
   component: TimePage,
@@ -58,15 +59,16 @@ function Stepper({
   slug: string;
   link: string;
 }) {
+  const { t } = useI18n();
   const [index, setIndex] = useState(0);
   const step = steps[index];
   return (
     <section className={`flex min-h-80 flex-col rounded-card border-2 border-ink p-4 ${dark ? "bg-ink text-sand" : "bg-sand text-ink"}`}>
-      <p className="text-sm font-extrabold">{kicker}</p>
-      <h1 className="font-display text-3xl">{title}</h1>
+      <p className="text-sm font-extrabold">{t(kicker)}</p>
+      <h1 className="font-display text-3xl">{t(title)}</h1>
       <p className="mt-4 font-display text-5xl tabular-nums">{index + 1}</p>
-      <h2 className="font-display text-2xl">{step.title}</h2>
-      <p className="mt-2 text-lg">{step.text}</p>
+      <h2 className="font-display text-2xl">{t(step.title)}</h2>
+      <p className="mt-2 text-lg">{t(step.text)}</p>
       <div className="mt-auto flex gap-2 pt-6">
         <button
           type="button"
@@ -74,7 +76,7 @@ function Stepper({
           disabled={index === 0}
           className="h-12 flex-1 rounded-card border-2 border-ink bg-sand font-extrabold text-ink disabled:opacity-40"
         >
-          Earlier
+          {t("Earlier")}
         </button>
         <button
           type="button"
@@ -82,11 +84,11 @@ function Stepper({
           disabled={index === steps.length - 1}
           className="h-12 flex-1 rounded-card border-2 border-ink bg-sand font-extrabold text-ink disabled:opacity-40"
         >
-          Later
+          {t("Later")}
         </button>
       </div>
       <Link to="/animals/$slug" params={{ slug }} className={`mt-3 text-sm font-extrabold underline ${dark ? "text-sand" : "text-ink"}`}>
-        {link}
+        {t(link)}
       </Link>
     </section>
   );
