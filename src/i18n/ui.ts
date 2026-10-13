@@ -41,6 +41,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Access key": "Iuchair inntrigidh",
     "Open the site": "Fosgail an làrach",
     "That key does not open the site.": "Chan eil an iuchair sin a' fosgladh na làraich.",
+    "There are 250 questions. Each game uses 10 or 25 of them.":
+      "Tha 250 ceist ann. Bidh gach geama a’ cleachdadh 10 no 25 dhiubh.",
     Lock: "Glas",
   },
   cy: {
@@ -75,6 +77,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Age 11-12": "Oed 11-12",
     "All ages": "Pob oed",
     Age: "Oed",
+    "There are 250 questions. Each game uses 10 or 25 of them.":
+      "Mae 250 o gwestiynau. Mae pob gêm yn defnyddio 10 neu 25 ohonynt.",
     "Buy an access key at Every School Ever. Then type the key here.":
       "Prynwch allwedd mynediad yn Every School Ever. Yna teipiwch yr allwedd yma.",
     "Buy an access key": "Prynu allwedd mynediad",
@@ -121,6 +125,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Access key": "Eochair rochtana",
     "Open the site": "Oscail an suíomh",
     "That key does not open the site.": "Ní osclaíonn an eochair sin an suíomh.",
+    "There are 250 questions. Each game uses 10 or 25 of them.":
+      "Tá 250 ceist ann. Úsáideann gach cluiche 10 nó 25 acu.",
     Lock: "Glasáil",
   },
   fr: {
@@ -155,6 +161,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Age 11-12": "11-12 ans",
     "All ages": "Tous les âges",
     Age: "Âge",
+    "There are 250 questions. Each game uses 10 or 25 of them.":
+      "Il y a 250 questions. Chaque partie en utilise 10 ou 25.",
     "Buy an access key at Every School Ever. Then type the key here.":
       "Achetez une clé d'accès sur Every School Ever. Puis tapez la clé ici.",
     "Buy an access key": "Acheter une clé d'accès",
@@ -195,6 +203,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Age 11-12": "11-12 anni",
     "All ages": "Tutte le età",
     Age: "Età",
+    "There are 250 questions. Each game uses 10 or 25 of them.":
+      "Ci sono 250 domande. Ogni partita ne usa 10 o 25.",
     "Buy an access key at Every School Ever. Then type the key here.":
       "Compra una chiave di accesso su Every School Ever. Poi scrivi la chiave qui.",
     "Buy an access key": "Compra una chiave di accesso",
@@ -235,6 +245,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Age 11-12": "11-12 años",
     "All ages": "Todas las edades",
     Age: "Edad",
+    "There are 250 questions. Each game uses 10 or 25 of them.":
+      "Hay 250 preguntas. Cada partida usa 10 o 25.",
     "Buy an access key at Every School Ever. Then type the key here.":
       "Compra una clave de acceso en Every School Ever. Luego escribe la clave aquí.",
     "Buy an access key": "Comprar una clave de acceso",
@@ -275,6 +287,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Age 11-12": "11-12 лет",
     "All ages": "Все возрасты",
     Age: "Возраст",
+    "There are 250 questions. Each game uses 10 or 25 of them.":
+      "Всего 250 вопросов. В каждой игре их 10 или 25.",
     "Buy an access key at Every School Ever. Then type the key here.":
       "Купи ключ доступа на сайте Every School Ever. Потом впиши ключ здесь.",
     "Buy an access key": "Купить ключ доступа",

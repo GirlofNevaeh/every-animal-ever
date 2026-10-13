@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
-import { animals } from "@/data/animals";
-import type { Animal } from "@/data/types";
+import { quizBank, type QuizQuestion } from "@/data/quiz-bank";
 import { useI18n } from "@/i18n/context";
 
 export const Route = createFileRoute("/quiz")({
@@ -29,12 +28,12 @@ function shuffle<T>(list: T[]): T[] {
   return copy;
 }
 
-function makeCard(animal: Animal): Card {
+function makeCard(item: QuizQuestion): Card {
   return {
-    slug: animal.slug,
-    prompt: animal.quiz.q,
-    correct: animal.quiz.choices[animal.quiz.a],
-    choices: shuffle([...animal.quiz.choices]),
+    slug: item.id,
+    prompt: item.prompt,
+    correct: item.choices[item.answer],
+    choices: shuffle([...item.choices]),
   };
 }
 
@@ -70,7 +69,7 @@ function QuizPage() {
   }, [phase, index, suddenCard]);
 
   function start() {
-    const cards = shuffle(animals).slice(0, mode === "10" ? 10 : 25).map(makeCard);
+    const cards = shuffle(quizBank).slice(0, mode === "10" ? 10 : 25).map(makeCard);
     const nextTeams = solo
       ? [{ id: 1, name: "You", score: 0 }]
       : Array.from({ length: teamCount }, (_, id) => ({
@@ -129,11 +128,11 @@ function QuizPage() {
   }
 
   function nextSudden(already: string[]) {
-    const pool = animals.filter((animal) => !already.includes(animal.slug));
-    const source = pool.length > 0 ? pool : animals;
-    const animal = source[Math.floor(Math.random() * source.length)];
-    setUsed((list) => [...list, animal.slug]);
-    return makeCard(animal);
+    const pool = quizBank.filter((item) => !already.includes(item.id));
+    const source = pool.length > 0 ? pool : quizBank;
+    const item = source[Math.floor(Math.random() * source.length)];
+    setUsed((list) => [...list, item.id]);
+    return makeCard(item);
   }
 
   function finishSudden() {
@@ -321,6 +320,7 @@ function Setup({
   return (
     <section className="mt-4 rounded-card border-2 border-ink bg-sand p-4">
       <h2 className="font-display text-2xl">{t("Class quiz")}</h2>
+      <p className="mt-1">{t("There are 250 questions. Each game uses 10 or 25 of them.")}</p>
       <div className="mt-3 grid grid-cols-2 gap-2">
         <Pick on={mode === "10"} label="Quick 10" onClick={() => setMode("10")} />
         <Pick on={mode === "25"} label="Mega 25" onClick={() => setMode("25")} />

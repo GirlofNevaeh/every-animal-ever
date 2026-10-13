@@ -1,3 +1,6 @@
+import { addedProjects } from "@/data/project-additions";
+import { getAnimal } from "@/data/animals";
+
 export type StageId = "p1" | "p2" | "p3" | "p4" | "p5" | "p6" | "p7";
 export type ProjectKind = "individual" | "team";
 
@@ -632,6 +635,7 @@ export const projects: Project[] = [
     done: "Eight labels are up, and each fact matches a page.",
     lookUp: ["okapi", "axolotl", "common-octopus", "pangolin"],
   },
+  ...addedProjects,
 ];
 
 const stageIds = new Set(stages.map((stage) => stage.id));
@@ -660,4 +664,17 @@ export function filterProjects(stage: string, kind: string) {
     if (selectedKind && project.kind !== selectedKind) return false;
     return true;
   });
+}
+
+const ids = new Set<string>();
+for (const project of projects) {
+  if (ids.has(project.id)) throw new Error(`Duplicate project ${project.id}`);
+  ids.add(project.id);
+  for (const slug of project.lookUp) {
+    if (!getAnimal(slug)) throw new Error(`Bad lookUp ${slug} on ${project.id}`);
+  }
+}
+for (const stage of stages) {
+  const list = projects.filter((project) => project.stage === stage.id);
+  if (list.length !== 10) throw new Error(`Expected 10 projects for ${stage.id}, got ${list.length}`);
 }
