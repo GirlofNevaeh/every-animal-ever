@@ -120,7 +120,7 @@ function Home() {
 
       <section className="mt-6 rounded-card border-2 border-leaf bg-sand p-4">
         <h2 className="font-display text-3xl">{t("Projects")}</h2>
-        <p className="mt-1">{t("On your own, or with a team. Age 5-6 to Age 11-12.")}</p>
+        <p className="mt-1">{t("On your own, or with a team. For young learners.")}</p>
         <Link
           to="/projects"
           search={{ stage: "", kind: "" }}

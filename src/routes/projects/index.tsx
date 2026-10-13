@@ -38,7 +38,7 @@ function ProjectsPage() {
   return (
     <main className="mx-auto max-w-5xl px-3 py-4">
       <h1 className="font-display text-4xl">{t("Projects")}</h1>
-      <p className="mt-1 text-lg">{t("Age 5-6 to Age 11-12. Work on your own, or with a team.")}</p>
+      <p className="mt-1 text-lg">{t("For young learners. Work on your own, or with a team.")}</p>
 
       <div className="mt-4 flex flex-wrap gap-2" role="group" aria-label={t("Age")}>
         <FilterChip on={stage === ""} label={t("All ages")} onClick={() => setSearch({ stage: "" })} />

@@ -24,8 +24,13 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Search animals by name": "Lorg beathach air ainm",
     "This site needs an access key.": "Feumaidh an làrach seo iuchair inntrigidh.",
     "200 animals. One unusual fact on each page.": "200 beathach. Aon fhìrinn neo-àbhaisteach air gach duilleag.",
-    "Places, habits, a class quiz, people, and projects for Age 5-6 to Age 11-12.":
-      "Àiteachan, cleachdaidhean, ceistean clas, daoine, agus pròiseactan airson aois 5-6 gu aois 11-12.",
+    "Places, habits, a class quiz, people, and projects for young learners.":
+      "Àiteachan, cleachdaidhean, ceistean clas, daoine, agus pròiseactan do luchd-ionnsachaidh òga.",
+    "On your own, or with a team. For young learners.": "Leat fhèin, no le sgioba. Do luchd-ionnsachaidh òga.",
+    "For young learners. Work on your own, or with a team.":
+      "Do luchd-ionnsachaidh òga. Obraich leat fhèin, no còmhla ri sgioba.",
+    "On your own and with a team. For young learners.":
+      "Leat fhèin agus còmhla ri sgioba. Do luchd-ionnsachaidh òga.",
     "Age 5-6": "Aois 5-6",
     "Age 6-7": "Aois 6-7",
     "Age 7-8": "Aois 7-8",
@@ -66,8 +71,14 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Search animals by name": "Chwilio anifeiliaid wrth enw",
     "This site needs an access key.": "Mae angen allwedd mynediad ar y wefan hon.",
     "200 animals. One unusual fact on each page.": "200 o anifeiliaid. Un ffaith anarferol ar bob tudalen.",
-    "Places, habits, a class quiz, people, and projects for Age 5-6 to Age 11-12.":
-      "Lleoedd, arferion, cwis dosbarth, pobl, a phrosiectau ar gyfer oed 5-6 i oed 11-12.",
+    "Places, habits, a class quiz, people, and projects for young learners.":
+      "Lleoedd, arferion, cwis dosbarth, pobl, a phrosiectau ar gyfer dysgwyr ifanc.",
+    "On your own, or with a team. For young learners.":
+      "Ar eich pen eich hun, neu gyda thîm. Ar gyfer dysgwyr ifanc.",
+    "For young learners. Work on your own, or with a team.":
+      "Ar gyfer dysgwyr ifanc. Gweithiwch ar eich pen eich hun, neu gyda thîm.",
+    "On your own and with a team. For young learners.":
+      "Ar eich pen eich hun a gyda thîm. Ar gyfer dysgwyr ifanc.",
     "Age 5-6": "Oed 5-6",
     "Age 6-7": "Oed 6-7",
     "Age 7-8": "Oed 7-8",
@@ -108,8 +119,13 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Search animals by name": "Cuardaigh ainmhithe de réir ainm",
     "This site needs an access key.": "Tá eochair rochtana de dhíth ar an suíomh seo.",
     "200 animals. One unusual fact on each page.": "200 ainmhí. Fíric neamhghnách amháin ar gach leathanach.",
-    "Places, habits, a class quiz, people, and projects for Age 5-6 to Age 11-12.":
-      "Áiteanna, nósanna, tráth na gceist ranga, daoine, agus tionscadail d'aois 5-6 go haois 11-12.",
+    "Places, habits, a class quiz, people, and projects for young learners.":
+      "Áiteanna, nósanna, tráth na gceist ranga, daoine, agus tionscadail d'fhoghlaimeoirí óga.",
+    "On your own, or with a team. For young learners.": "Ar do chuid féin, nó le foireann. D'fhoghlaimeoirí óga.",
+    "For young learners. Work on your own, or with a team.":
+      "D'fhoghlaimeoirí óga. Bí ag obair leat féin, nó le foireann.",
+    "On your own and with a team. For young learners.":
+      "Ar do shon féin agus le foireann. D'fhoghlaimeoirí óga.",
     "Age 5-6": "Aois 5-6",
     "Age 6-7": "Aois 6-7",
     "Age 7-8": "Aois 7-8",
@@ -150,8 +166,12 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Search animals by name": "Chercher un animal par son nom",
     "This site needs an access key.": "Ce site a besoin d'une clé d'accès.",
     "200 animals. One unusual fact on each page.": "200 animaux. Un fait insolite sur chaque page.",
-    "Places, habits, a class quiz, people, and projects for Age 5-6 to Age 11-12.":
-      "Des lieux, des habitudes, un quiz de classe, des personnes, et des projets de 5-6 ans à 11-12 ans.",
+    "Places, habits, a class quiz, people, and projects for young learners.":
+      "Des lieux, des habitudes, un quiz de classe, des personnes, et des projets pour les jeunes apprenants.",
+    "On your own, or with a team. For young learners.": "Seul ou en équipe. Pour les jeunes apprenants.",
+    "For young learners. Work on your own, or with a team.":
+      "Pour les jeunes apprenants. Travaillez seul ou en équipe.",
+    "On your own and with a team. For young learners.": "Seul et en équipe. Pour les jeunes apprenants.",
     "Age 5-6": "5-6 ans",
     "Age 6-7": "6-7 ans",
     "Age 7-8": "7-8 ans",
@@ -192,8 +212,12 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Search animals by name": "Cerca un animale per nome",
     "This site needs an access key.": "Questo sito ha bisogno di una chiave di accesso.",
     "200 animals. One unusual fact on each page.": "200 animali. Un fatto insolito su ogni pagina.",
-    "Places, habits, a class quiz, people, and projects for Age 5-6 to Age 11-12.":
-      "Luoghi, abitudini, un quiz di classe, persone e progetti dai 5-6 anni agli 11-12 anni.",
+    "Places, habits, a class quiz, people, and projects for young learners.":
+      "Luoghi, abitudini, un quiz di classe, persone e progetti per i giovani studenti.",
+    "On your own, or with a team. For young learners.": "Da solo o in squadra. Per i giovani studenti.",
+    "For young learners. Work on your own, or with a team.":
+      "Per i giovani studenti. Lavora da solo o in squadra.",
+    "On your own and with a team. For young learners.": "Da solo e in squadra. Per i giovani studenti.",
     "Age 5-6": "5-6 anni",
     "Age 6-7": "6-7 anni",
     "Age 7-8": "7-8 anni",
@@ -234,8 +258,12 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Search animals by name": "Buscar un animal por su nombre",
     "This site needs an access key.": "Este sitio necesita una clave de acceso.",
     "200 animals. One unusual fact on each page.": "200 animales. Un dato raro en cada página.",
-    "Places, habits, a class quiz, people, and projects for Age 5-6 to Age 11-12.":
-      "Lugares, hábitos, un quiz de clase, personas y proyectos de 5-6 años a 11-12 años.",
+    "Places, habits, a class quiz, people, and projects for young learners.":
+      "Lugares, hábitos, un quiz de clase, personas y proyectos para jóvenes estudiantes.",
+    "On your own, or with a team. For young learners.": "Solo o con un equipo. Para jóvenes estudiantes.",
+    "For young learners. Work on your own, or with a team.":
+      "Para jóvenes estudiantes. Trabaja solo o con un equipo.",
+    "On your own and with a team. For young learners.": "Solo y con un equipo. Para jóvenes estudiantes.",
     "Age 5-6": "5-6 años",
     "Age 6-7": "6-7 años",
     "Age 7-8": "7-8 años",
@@ -276,8 +304,12 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Search animals by name": "Искать животное по имени",
     "This site needs an access key.": "Этому сайту нужен ключ доступа.",
     "200 animals. One unusual fact on each page.": "200 животных. На каждой странице одно необычное свойство.",
-    "Places, habits, a class quiz, people, and projects for Age 5-6 to Age 11-12.":
-      "Места, привычки, викторина для класса, люди и проекты для возраста 5-6 до 11-12.",
+    "Places, habits, a class quiz, people, and projects for young learners.":
+      "Места, привычки, викторина для класса, люди и проекты для юных учеников.",
+    "On your own, or with a team. For young learners.": "Один или с друзьями. Для юных учеников.",
+    "For young learners. Work on your own, or with a team.":
+      "Для юных учеников. Работай один или в команде.",
+    "On your own and with a team. For young learners.": "Один и в команде. Для юных учеников.",
     "Age 5-6": "5-6 лет",
     "Age 6-7": "6-7 лет",
     "Age 7-8": "7-8 лет",
