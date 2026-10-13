@@ -43,7 +43,7 @@ export function Paywall() {
       <section className="mt-4 rounded-card border-2 border-ink bg-sand p-4">
         <h2 className="font-display text-3xl">{t("This site needs an access key.")}</h2>
         <p className="mt-2 text-lg">
-          {t("Places, habits, a class quiz, people, and projects for Primary 1 to Primary 7.")}
+          {t("Places, habits, a class quiz, people, and projects for Age 5-6 to Age 11-12.")}
         </p>
         <p className="mt-2">
           {t("Buy an access key at Every School Ever. Then type the key here.")}

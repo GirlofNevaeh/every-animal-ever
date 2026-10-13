@@ -52,7 +52,7 @@ function ProjectPage() {
         </p>
         <h1 className="mt-2 font-display text-4xl">{t(project.title)}</h1>
         <p className="font-bold">
-          {t(stage.label)}. {t(stage.age)}.
+          {t(stage.label)}.
         </p>
         <p className="mt-3">{t(project.aim)}</p>
         <p className="mt-2">

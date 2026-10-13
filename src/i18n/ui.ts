@@ -24,8 +24,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Search animals by name": "Lorg beathach air ainm",
     "This site needs an access key.": "Feumaidh an làrach seo iuchair inntrigidh.",
     "200 animals. One unusual fact on each page.": "200 beathach. Aon fhìrinn neo-àbhaisteach air gach duilleag.",
-    "Places, habits, a class quiz, people, and projects for Primary 1 to Primary 7.":
-      "Àiteachan, cleachdaidhean, ceistean clas, daoine, agus pròiseactan airson Clas 1 gu Clas 7.",
+    "Places, habits, a class quiz, people, and projects for Age 5-6 to Age 11-12.":
+      "Àiteachan, cleachdaidhean, ceistean clas, daoine, agus pròiseactan airson aois 5-6 gu aois 11-12.",
+    "Age 5-6": "Aois 5-6",
+    "Age 6-7": "Aois 6-7",
+    "Age 7-8": "Aois 7-8",
+    "Age 8-9": "Aois 8-9",
+    "Age 9-10": "Aois 9-10",
+    "Age 10-11": "Aois 10-11",
+    "Age 11-12": "Aois 11-12",
+    "All ages": "A h-uile aois",
+    Age: "Aois",
     "Buy an access key at Every School Ever. Then type the key here.":
       "Ceannaich iuchair inntrigidh aig Every School Ever. An uair sin sgrìobh an iuchair an seo.",
     "Buy an access key": "Ceannaich iuchair inntrigidh",
@@ -55,8 +64,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Search animals by name": "Chwilio anifeiliaid wrth enw",
     "This site needs an access key.": "Mae angen allwedd mynediad ar y wefan hon.",
     "200 animals. One unusual fact on each page.": "200 o anifeiliaid. Un ffaith anarferol ar bob tudalen.",
-    "Places, habits, a class quiz, people, and projects for Primary 1 to Primary 7.":
-      "Lleoedd, arferion, cwis dosbarth, pobl, a phrosiectau ar gyfer Cynradd 1 i Gynradd 7.",
+    "Places, habits, a class quiz, people, and projects for Age 5-6 to Age 11-12.":
+      "Lleoedd, arferion, cwis dosbarth, pobl, a phrosiectau ar gyfer oed 5-6 i oed 11-12.",
+    "Age 5-6": "Oed 5-6",
+    "Age 6-7": "Oed 6-7",
+    "Age 7-8": "Oed 7-8",
+    "Age 8-9": "Oed 8-9",
+    "Age 9-10": "Oed 9-10",
+    "Age 10-11": "Oed 10-11",
+    "Age 11-12": "Oed 11-12",
+    "All ages": "Pob oed",
+    Age: "Oed",
     "Buy an access key at Every School Ever. Then type the key here.":
       "Prynwch allwedd mynediad yn Every School Ever. Yna teipiwch yr allwedd yma.",
     "Buy an access key": "Prynu allwedd mynediad",
@@ -86,8 +104,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Search animals by name": "Cuardaigh ainmhithe de réir ainm",
     "This site needs an access key.": "Tá eochair rochtana de dhíth ar an suíomh seo.",
     "200 animals. One unusual fact on each page.": "200 ainmhí. Fíric neamhghnách amháin ar gach leathanach.",
-    "Places, habits, a class quiz, people, and projects for Primary 1 to Primary 7.":
-      "Áiteanna, nósanna, tráth na gceist ranga, daoine, agus tionscadail do Bhunscoil 1 go Bunscoil 7.",
+    "Places, habits, a class quiz, people, and projects for Age 5-6 to Age 11-12.":
+      "Áiteanna, nósanna, tráth na gceist ranga, daoine, agus tionscadail d'aois 5-6 go haois 11-12.",
+    "Age 5-6": "Aois 5-6",
+    "Age 6-7": "Aois 6-7",
+    "Age 7-8": "Aois 7-8",
+    "Age 8-9": "Aois 8-9",
+    "Age 9-10": "Aois 9-10",
+    "Age 10-11": "Aois 10-11",
+    "Age 11-12": "Aois 11-12",
+    "All ages": "Gach aois",
+    Age: "Aois",
     "Buy an access key at Every School Ever. Then type the key here.":
       "Ceannaigh eochair rochtana ag Every School Ever. Ansin clóscríobh an eochair anseo.",
     "Buy an access key": "Ceannaigh eochair rochtana",
@@ -117,8 +144,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Search animals by name": "Chercher un animal par son nom",
     "This site needs an access key.": "Ce site a besoin d'une clé d'accès.",
     "200 animals. One unusual fact on each page.": "200 animaux. Un fait insolite sur chaque page.",
-    "Places, habits, a class quiz, people, and projects for Primary 1 to Primary 7.":
-      "Des lieux, des habitudes, un quiz de classe, des personnes, et des projets de la Primaire 1 à la Primaire 7.",
+    "Places, habits, a class quiz, people, and projects for Age 5-6 to Age 11-12.":
+      "Des lieux, des habitudes, un quiz de classe, des personnes, et des projets de 5-6 ans à 11-12 ans.",
+    "Age 5-6": "5-6 ans",
+    "Age 6-7": "6-7 ans",
+    "Age 7-8": "7-8 ans",
+    "Age 8-9": "8-9 ans",
+    "Age 9-10": "9-10 ans",
+    "Age 10-11": "10-11 ans",
+    "Age 11-12": "11-12 ans",
+    "All ages": "Tous les âges",
+    Age: "Âge",
     "Buy an access key at Every School Ever. Then type the key here.":
       "Achetez une clé d'accès sur Every School Ever. Puis tapez la clé ici.",
     "Buy an access key": "Acheter une clé d'accès",
@@ -148,8 +184,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Search animals by name": "Cerca un animale per nome",
     "This site needs an access key.": "Questo sito ha bisogno di una chiave di accesso.",
     "200 animals. One unusual fact on each page.": "200 animali. Un fatto insolito su ogni pagina.",
-    "Places, habits, a class quiz, people, and projects for Primary 1 to Primary 7.":
-      "Luoghi, abitudini, un quiz di classe, persone e progetti per Primaria 1 fino a Primaria 7.",
+    "Places, habits, a class quiz, people, and projects for Age 5-6 to Age 11-12.":
+      "Luoghi, abitudini, un quiz di classe, persone e progetti dai 5-6 anni agli 11-12 anni.",
+    "Age 5-6": "5-6 anni",
+    "Age 6-7": "6-7 anni",
+    "Age 7-8": "7-8 anni",
+    "Age 8-9": "8-9 anni",
+    "Age 9-10": "9-10 anni",
+    "Age 10-11": "10-11 anni",
+    "Age 11-12": "11-12 anni",
+    "All ages": "Tutte le età",
+    Age: "Età",
     "Buy an access key at Every School Ever. Then type the key here.":
       "Compra una chiave di accesso su Every School Ever. Poi scrivi la chiave qui.",
     "Buy an access key": "Compra una chiave di accesso",
@@ -179,8 +224,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Search animals by name": "Buscar un animal por su nombre",
     "This site needs an access key.": "Este sitio necesita una clave de acceso.",
     "200 animals. One unusual fact on each page.": "200 animales. Un dato raro en cada página.",
-    "Places, habits, a class quiz, people, and projects for Primary 1 to Primary 7.":
-      "Lugares, hábitos, un quiz de clase, personas y proyectos de Primaria 1 a Primaria 7.",
+    "Places, habits, a class quiz, people, and projects for Age 5-6 to Age 11-12.":
+      "Lugares, hábitos, un quiz de clase, personas y proyectos de 5-6 años a 11-12 años.",
+    "Age 5-6": "5-6 años",
+    "Age 6-7": "6-7 años",
+    "Age 7-8": "7-8 años",
+    "Age 8-9": "8-9 años",
+    "Age 9-10": "9-10 años",
+    "Age 10-11": "10-11 años",
+    "Age 11-12": "11-12 años",
+    "All ages": "Todas las edades",
+    Age: "Edad",
     "Buy an access key at Every School Ever. Then type the key here.":
       "Compra una clave de acceso en Every School Ever. Luego escribe la clave aquí.",
     "Buy an access key": "Comprar una clave de acceso",
@@ -210,8 +264,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Search animals by name": "Искать животное по имени",
     "This site needs an access key.": "Этому сайту нужен ключ доступа.",
     "200 animals. One unusual fact on each page.": "200 животных. На каждой странице одно необычное свойство.",
-    "Places, habits, a class quiz, people, and projects for Primary 1 to Primary 7.":
-      "Места, привычки, викторина для класса, люди и проекты с 1 по 7 класс.",
+    "Places, habits, a class quiz, people, and projects for Age 5-6 to Age 11-12.":
+      "Места, привычки, викторина для класса, люди и проекты для возраста 5-6 до 11-12.",
+    "Age 5-6": "5-6 лет",
+    "Age 6-7": "6-7 лет",
+    "Age 7-8": "7-8 лет",
+    "Age 8-9": "8-9 лет",
+    "Age 9-10": "9-10 лет",
+    "Age 10-11": "10-11 лет",
+    "Age 11-12": "11-12 лет",
+    "All ages": "Все возрасты",
+    Age: "Возраст",
     "Buy an access key at Every School Ever. Then type the key here.":
       "Купи ключ доступа на сайте Every School Ever. Потом впиши ключ здесь.",
     "Buy an access key": "Купить ключ доступа",

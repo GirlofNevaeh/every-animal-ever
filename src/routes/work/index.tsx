@@ -36,7 +36,7 @@ function WorkPage() {
         className="mt-6 block rounded-card border-2 border-leaf bg-sand p-4"
       >
         <span className="block font-display text-3xl">{t("Projects")}</span>
-        <span className="mt-1 block font-bold">{t("On your own and with a team. Primary 1 to Primary 7.")}</span>
+        <span className="mt-1 block font-bold">{t("On your own and with a team. Age 5-6 to Age 11-12.")}</span>
       </Link>
     </main>
   );
