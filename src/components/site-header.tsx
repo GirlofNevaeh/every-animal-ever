@@ -55,13 +55,15 @@ export function SiteHeader() {
               {t("Lock")}
             </button>
           ) : null}
-          <button
-            type="button"
-            onClick={() => setInstall(true)}
-            className="h-10 shrink-0 rounded-card border-2 border-ink bg-sand px-2 text-xs font-extrabold text-ink sm:text-sm"
-          >
-            {t("Add to Home")}
-          </button>
+          {open ? (
+            <button
+              type="button"
+              onClick={() => setInstall(true)}
+              className="h-10 shrink-0 rounded-card border-2 border-ink bg-sand px-2 text-xs font-extrabold text-ink sm:text-sm"
+            >
+              {t("Add to Home")}
+            </button>
+          ) : null}
         </div>
       </div>
       {open ? (

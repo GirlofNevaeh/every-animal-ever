@@ -46,6 +46,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Access key": "Iuchair inntrigidh",
     "Open the site": "Fosgail an làrach",
     "That key does not open the site.": "Chan eil an iuchair sin a' fosgladh na làraich.",
+    "Ages 5–12": "Aois 5–12",
+    "A bright guide to animals for children.": "Iùl soilleir air beathaichean do chloinn.",
+    "Animals, places, habits, people, projects, a quiz, and work are inside.":
+      "Tha beathaichean, àiteachan, cleachdaidhean, daoine, pròiseactan, ceistean, agus obair a-staigh.",
+    "The guide stays locked until you enter an access key.":
+      "Tha an iùl glaiste gus an cuir thu a-steach iuchair inntrigidh.",
+    "Buy an access key at Every School Ever. Then come back and type it here.":
+      "Ceannaich iuchair inntrigidh aig Every School Ever. An uair sin thig air ais agus sgrìobh i an seo.",
+    "Enter key": "Cuir a-steach an iuchair",
+    "That key does not work. Check it and try again.":
+      "Chan eil an iuchair sin ag obair. Thoir sùil oirre agus feuch a-rithist.",
     "There are 250 questions. Each game uses 10 or 25 of them.":
       "Tha 250 ceist ann. Bidh gach geama a’ cleachdadh 10 no 25 dhiubh.",
     Lock: "Glas",
@@ -96,6 +107,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Access key": "Allwedd mynediad",
     "Open the site": "Agor y wefan",
     "That key does not open the site.": "Nid yw'r allwedd honno'n agor y wefan.",
+    "Ages 5–12": "Oed 5–12",
+    "A bright guide to animals for children.": "Canllaw llachar am anifeiliaid i blant.",
+    "Animals, places, habits, people, projects, a quiz, and work are inside.":
+      "Mae anifeiliaid, lleoedd, arferion, pobl, prosiectau, cwis, a gwaith y tu mewn.",
+    "The guide stays locked until you enter an access key.":
+      "Mae'r canllaw yn aros dan glo nes i chi roi allwedd mynediad.",
+    "Buy an access key at Every School Ever. Then come back and type it here.":
+      "Prynwch allwedd mynediad yn Every School Ever. Yna dewch yn ôl a theipiwch hi yma.",
+    "Enter key": "Rhowch yr allwedd",
+    "That key does not work. Check it and try again.":
+      "Nid yw'r allwedd honno'n gweithio. Gwiriwch hi a rhowch gynnig arall.",
     Lock: "Cloi",
   },
   ga: {
@@ -141,6 +163,17 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Access key": "Eochair rochtana",
     "Open the site": "Oscail an suíomh",
     "That key does not open the site.": "Ní osclaíonn an eochair sin an suíomh.",
+    "Ages 5–12": "Aois 5–12",
+    "A bright guide to animals for children.": "Treoir gheal ar ainmhithe do pháistí.",
+    "Animals, places, habits, people, projects, a quiz, and work are inside.":
+      "Tá ainmhithe, áiteanna, nósanna, daoine, tionscadail, tráth na gceist, agus obair istigh.",
+    "The guide stays locked until you enter an access key.":
+      "Fanann an treoir faoi ghlas go dtí go gcuireann tú eochair rochtana isteach.",
+    "Buy an access key at Every School Ever. Then come back and type it here.":
+      "Ceannaigh eochair rochtana ag Every School Ever. Ansin tar ar ais agus clóscríobh í anseo.",
+    "Enter key": "Cuir isteach an eochair",
+    "That key does not work. Check it and try again.":
+      "Ní oibríonn an eochair sin. Seiceáil í agus bain triail eile as.",
     "There are 250 questions. Each game uses 10 or 25 of them.":
       "Tá 250 ceist ann. Úsáideann gach cluiche 10 nó 25 acu.",
     Lock: "Glasáil",
@@ -189,6 +222,16 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Access key": "Clé d'accès",
     "Open the site": "Ouvrir le site",
     "That key does not open the site.": "Cette clé n'ouvre pas le site.",
+    "Ages 5–12": "5–12 ans",
+    "A bright guide to animals for children.": "Un guide clair sur les animaux pour les enfants.",
+    "Animals, places, habits, people, projects, a quiz, and work are inside.":
+      "Des animaux, des lieux, des habitudes, des personnes, des projets, un quiz et du travail sont à l'intérieur.",
+    "The guide stays locked until you enter an access key.":
+      "Le guide reste fermé tant que tu n'as pas entré une clé d'accès.",
+    "Buy an access key at Every School Ever. Then come back and type it here.":
+      "Achète une clé d'accès sur Every School Ever. Puis reviens et tape-la ici.",
+    "Enter key": "Entrer la clé",
+    "That key does not work. Check it and try again.": "Cette clé ne marche pas. Vérifie-la et réessaie.",
     Lock: "Verrouiller",
   },
   it: {
@@ -235,6 +278,16 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Access key": "Chiave di accesso",
     "Open the site": "Apri il sito",
     "That key does not open the site.": "Questa chiave non apre il sito.",
+    "Ages 5–12": "5–12 anni",
+    "A bright guide to animals for children.": "Una guida chiara agli animali per i bambini.",
+    "Animals, places, habits, people, projects, a quiz, and work are inside.":
+      "Dentro ci sono animali, luoghi, abitudini, persone, progetti, un quiz e attività.",
+    "The guide stays locked until you enter an access key.":
+      "La guida resta chiusa finché non inserisci una chiave di accesso.",
+    "Buy an access key at Every School Ever. Then come back and type it here.":
+      "Compra una chiave di accesso su Every School Ever. Poi torna e scrivila qui.",
+    "Enter key": "Inserisci la chiave",
+    "That key does not work. Check it and try again.": "Questa chiave non funziona. Controllala e riprova.",
     Lock: "Blocca",
   },
   es: {
@@ -281,6 +334,16 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Access key": "Clave de acceso",
     "Open the site": "Abrir el sitio",
     "That key does not open the site.": "Esa clave no abre el sitio.",
+    "Ages 5–12": "5–12 años",
+    "A bright guide to animals for children.": "Una guía clara de animales para niños.",
+    "Animals, places, habits, people, projects, a quiz, and work are inside.":
+      "Dentro hay animales, lugares, hábitos, personas, proyectos, un quiz y tareas.",
+    "The guide stays locked until you enter an access key.":
+      "La guía sigue cerrada hasta que escribas una clave de acceso.",
+    "Buy an access key at Every School Ever. Then come back and type it here.":
+      "Compra una clave de acceso en Every School Ever. Luego vuelve y escríbela aquí.",
+    "Enter key": "Entrar la clave",
+    "That key does not work. Check it and try again.": "Esa clave no funciona. Revísala e inténtalo otra vez.",
     Lock: "Bloquear",
   },
   ru: {
@@ -327,6 +390,16 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Access key": "Ключ доступа",
     "Open the site": "Открыть сайт",
     "That key does not open the site.": "Этот ключ не открывает сайт.",
+    "Ages 5–12": "5–12 лет",
+    "A bright guide to animals for children.": "Ясный справочник о животных для детей.",
+    "Animals, places, habits, people, projects, a quiz, and work are inside.":
+      "Внутри животные, места, привычки, люди, проекты, викторина и задания.",
+    "The guide stays locked until you enter an access key.":
+      "Справочник закрыт, пока ты не введёшь ключ доступа.",
+    "Buy an access key at Every School Ever. Then come back and type it here.":
+      "Купи ключ доступа на сайте Every School Ever. Потом вернись и впиши его здесь.",
+    "Enter key": "Ввести ключ",
+    "That key does not work. Check it and try again.": "Этот ключ не подходит. Проверь его и попробуй ещё раз.",
     Lock: "Запереть",
   },
 };

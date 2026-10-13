@@ -71,30 +71,6 @@ function HabitsPage() {
           </ul>
         </div>
       </section>
-
-      <section className="bg-berry px-4 py-8 text-sand">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="font-display text-3xl">{t("Stories")}</h2>
-          <p className="mt-2 text-sm font-extrabold tracking-wide">{t("These are stories. They are not facts.")}</p>
-          <div className="mt-4 grid gap-3 sm:grid-cols-3">
-            <article className="rounded-card bg-sand p-4 text-ink">
-              <p className="text-xs font-extrabold text-berry">{t("Story")}</p>
-              <h3 className="font-display text-2xl">{t("The tortoise and the hare")}</h3>
-              <p className="mt-2">{t("A story race. Real tortoises are slow. Real hares are fast. The race did not happen.")}</p>
-            </article>
-            <article className="rounded-card bg-sand p-4 text-ink">
-              <p className="text-xs font-extrabold text-berry">{t("Story")}</p>
-              <h3 className="font-display text-2xl">{t("How the camel got its hump")}</h3>
-              <p className="mt-2">{t("A story. A real camel hump stores fat, not a wish.")}</p>
-            </article>
-            <article className="rounded-card bg-sand p-4 text-ink">
-              <p className="text-xs font-extrabold text-berry">{t("Story")}</p>
-              <h3 className="font-display text-2xl">{t("A unicorn")}</h3>
-              <p className="mt-2">{t("A unicorn is a story animal. It is not a real animal.")}</p>
-            </article>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
