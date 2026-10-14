@@ -47,7 +47,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Open the site": "Fosgail an làrach",
     "That key does not open the site.": "Chan eil an iuchair sin a' fosgladh na làraich.",
     "Age 5-12": "Aois 5-12",
-    "A bright guide to animals for children.": "Iùl soilleir air beathaichean do chloinn.",
+    "The home page stays open. The rest needs an access key.":
+      "Tha an duilleag-dhachaigh fosgailte. Feumaidh an còrr iuchair inntrigidh.",
     "Animals, places, habits, people, projects, a quiz, and work are inside.":
       "Tha beathaichean, àiteachan, cleachdaidhean, daoine, pròiseactan, ceistean, agus obair a-staigh.",
     "The guide stays locked until you enter an access key.":
@@ -110,7 +111,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Open the site": "Agor y wefan",
     "That key does not open the site.": "Nid yw'r allwedd honno'n agor y wefan.",
     "Age 5-12": "Oed 5-12",
-    "A bright guide to animals for children.": "Canllaw llachar am anifeiliaid i blant.",
+    "The home page stays open. The rest needs an access key.":
+      "Mae'r dudalen gartref yn aros ar agor. Mae angen allwedd mynediad ar y gweddill.",
     "Animals, places, habits, people, projects, a quiz, and work are inside.":
       "Mae anifeiliaid, lleoedd, arferion, pobl, prosiectau, cwis, a gwaith y tu mewn.",
     "The guide stays locked until you enter an access key.":
@@ -168,7 +170,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Open the site": "Oscail an suíomh",
     "That key does not open the site.": "Ní osclaíonn an eochair sin an suíomh.",
     "Age 5-12": "Aois 5-12",
-    "A bright guide to animals for children.": "Treoir gheal ar ainmhithe do pháistí.",
+    "The home page stays open. The rest needs an access key.":
+      "Fanann an leathanach baile ar oscailt. Teastaíonn eochair rochtana ón gcuid eile.",
     "Animals, places, habits, people, projects, a quiz, and work are inside.":
       "Tá ainmhithe, áiteanna, nósanna, daoine, tionscadail, tráth na gceist, agus obair istigh.",
     "The guide stays locked until you enter an access key.":
@@ -229,7 +232,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Open the site": "Ouvrir le site",
     "That key does not open the site.": "Cette clé n'ouvre pas le site.",
     "Age 5-12": "5-12 ans",
-    "A bright guide to animals for children.": "Un guide clair sur les animaux pour les enfants.",
+    "The home page stays open. The rest needs an access key.":
+      "La page d'accueil reste ouverte. Le reste a besoin d'une clé d'accès.",
     "Animals, places, habits, people, projects, a quiz, and work are inside.":
       "Des animaux, des lieux, des habitudes, des personnes, des projets, un quiz et du travail sont à l'intérieur.",
     "The guide stays locked until you enter an access key.":
@@ -287,7 +291,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Open the site": "Apri il sito",
     "That key does not open the site.": "Questa chiave non apre il sito.",
     "Age 5-12": "5-12 anni",
-    "A bright guide to animals for children.": "Una guida chiara agli animali per i bambini.",
+    "The home page stays open. The rest needs an access key.":
+      "La pagina iniziale resta aperta. Il resto ha bisogno di una chiave di accesso.",
     "Animals, places, habits, people, projects, a quiz, and work are inside.":
       "Dentro ci sono animali, luoghi, abitudini, persone, progetti, un quiz e attività.",
     "The guide stays locked until you enter an access key.":
@@ -345,7 +350,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Open the site": "Abrir el sitio",
     "That key does not open the site.": "Esa clave no abre el sitio.",
     "Age 5-12": "5-12 años",
-    "A bright guide to animals for children.": "Una guía clara de animales para niños.",
+    "The home page stays open. The rest needs an access key.":
+      "La página de inicio sigue abierta. El resto necesita una clave de acceso.",
     "Animals, places, habits, people, projects, a quiz, and work are inside.":
       "Dentro hay animales, lugares, hábitos, personas, proyectos, un quiz y tareas.",
     "The guide stays locked until you enter an access key.":
@@ -403,7 +409,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "Open the site": "Открыть сайт",
     "That key does not open the site.": "Этот ключ не открывает сайт.",
     "Age 5-12": "5-12 лет",
-    "A bright guide to animals for children.": "Ясный справочник о животных для детей.",
+    "The home page stays open. The rest needs an access key.":
+      "Главная страница открыта. Для остального нужен ключ доступа.",
     "Animals, places, habits, people, projects, a quiz, and work are inside.":
       "Внутри животные, места, привычки, люди, проекты, викторина и задания.",
     "The guide stays locked until you enter an access key.":

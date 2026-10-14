@@ -1,11 +1,22 @@
-import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router";
+import { createRootRoute, HeadContent, Outlet, Scripts, useRouterState } from "@tanstack/react-router";
 import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
+import { Paywall } from "@/components/paywall";
 import { SiteFooter, SiteHeader } from "@/components/site-header";
 import { I18nProvider } from "@/i18n/context";
+import { AccessProvider, useAccess } from "@/lib/access";
+import { readAccess } from "@/lib/access.functions";
 import appCss from "../styles.css?url";
 
 export const Route = createRootRoute({
+  beforeLoad: async () => {
+    try {
+      const { open } = await readAccess();
+      return { accessOpen: open };
+    } catch {
+      return { accessOpen: false };
+    }
+  },
   head: () => ({
     meta: [
       { charSet: "utf-8" },
@@ -30,6 +41,7 @@ export const Route = createRootRoute({
 });
 
 function RootDocument() {
+  const { accessOpen } = Route.useRouteContext();
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -39,13 +51,27 @@ function RootDocument() {
         <PreviewHostBridge />
         <AuthProvider>
           <I18nProvider>
-            <SiteHeader />
-            <Outlet />
-            <SiteFooter />
+            <AccessProvider initialOpen={accessOpen}>
+              <SiteHeader />
+              <GatedOutlet />
+            </AccessProvider>
           </I18nProvider>
         </AuthProvider>
         <Scripts />
       </body>
     </html>
+  );
+}
+
+function GatedOutlet() {
+  const { open, ready } = useAccess();
+  const path = useRouterState({ select: (state) => state.location.pathname });
+  const home = path === "/";
+  if (!home && (!ready || !open)) return <Paywall />;
+  return (
+    <>
+      <Outlet />
+      <SiteFooter />
+    </>
   );
 }

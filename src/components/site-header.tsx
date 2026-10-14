@@ -2,6 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useState } from "react";
 import { useI18n } from "@/i18n/context";
 import { localeLabel, localeShort, locales } from "@/i18n/locales";
+import { useAccess } from "@/lib/access";
 
 const NAV = [
   { to: "/", label: "Home" },
@@ -23,6 +24,7 @@ function active(path: string, to: string) {
 
 export function SiteHeader() {
   const { t, locale, setLocale } = useI18n();
+  const { open, lock } = useAccess();
   const path = useRouterState({ select: (state) => state.location.pathname });
   const [install, setInstall] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -44,6 +46,15 @@ export function SiteHeader() {
           >
             {localeShort[locale]}
           </button>
+          {open ? (
+            <button
+              type="button"
+              onClick={() => void lock()}
+              className="h-10 shrink-0 rounded-card border-2 border-ink bg-sand px-2 text-xs font-extrabold text-ink sm:text-sm"
+            >
+              {t("Lock")}
+            </button>
+          ) : null}
           <button
             type="button"
             onClick={() => setInstall(true)}
