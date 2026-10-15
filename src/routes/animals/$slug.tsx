@@ -11,7 +11,7 @@ const moreLabel: Record<Group, string> = {
   amphibian: "More amphibians",
   fish: "More fish",
   insect: "More insects",
-  other: "More other",
+  other: "More other animals",
 };
 
 export const Route = createFileRoute("/animals/$slug")({

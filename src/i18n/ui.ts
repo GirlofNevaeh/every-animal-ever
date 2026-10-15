@@ -82,6 +82,9 @@ export const ui: Record<Locale, Record<string, string>> = {
     Lock: "Glas",
     Cookies: "Briosgaidean",
     OK: "Ceart",
+    "A bright guide to animals for children.": "Iùl soilleir mu bheathaichean do chloinn.",
+    "1 animal": "1 beathach",
+    "1 animal lives here.": "Tha 1 beathach a' fuireach an seo.",
     "This site stores a cookie on this device. It remembers your language and your access key. It does not watch you on other sites.":
       "Tha an làrach seo a' cumail briosgaid air an inneal seo. Tha i a' cuimhneachadh do chànain agus d' iuchair inntrigidh. Chan eil i gad leantainn air làraichean eile.",
   },
@@ -148,6 +151,9 @@ export const ui: Record<Locale, Record<string, string>> = {
     Lock: "Cloi",
     Cookies: "Cwcis",
     OK: "Iawn",
+    "A bright guide to animals for children.": "Canllaw disglair i anifeiliaid ar gyfer plant.",
+    "1 animal": "1 anifail",
+    "1 animal lives here.": "Mae 1 anifail yn byw yma.",
     "This site stores a cookie on this device. It remembers your language and your access key. It does not watch you on other sites.":
       "Mae'r wefan hon yn cadw cwci ar y ddyfais hon. Mae'n cofio eich iaith a'ch allwedd mynediad. Nid yw'n eich gwylio ar wefannau eraill.",
   },
@@ -213,6 +219,9 @@ export const ui: Record<Locale, Record<string, string>> = {
     Lock: "Glasáil",
     Cookies: "Fianáin",
     OK: "Ceart go leor",
+    "A bright guide to animals for children.": "Treoir gheal ar ainmhithe do pháistí.",
+    "1 animal": "1 ainmhí",
+    "1 animal lives here.": "Tá 1 ainmhí ina chónaí anseo.",
     "This site stores a cookie on this device. It remembers your language and your access key. It does not watch you on other sites.":
       "Stórálann an suíomh seo fianán ar an ngléas seo. Cuimhníonn sé ar do theanga agus ar d'eochair rochtana. Ní leanann sé thú ar shuíomhanna eile.",
   },
@@ -276,6 +285,9 @@ export const ui: Record<Locale, Record<string, string>> = {
     Lock: "Verrouiller",
     Cookies: "Cookies",
     OK: "D'accord",
+    "A bright guide to animals for children.": "Un guide clair sur les animaux, pour les enfants.",
+    "1 animal": "1 animal",
+    "1 animal lives here.": "1 animal vit ici.",
     "This site stores a cookie on this device. It remembers your language and your access key. It does not watch you on other sites.":
       "Ce site garde un cookie sur cet appareil. Il retient ta langue et ta clé d'accès. Il ne te suit pas sur les autres sites.",
   },
@@ -339,6 +351,9 @@ export const ui: Record<Locale, Record<string, string>> = {
     Lock: "Blocca",
     Cookies: "Cookie",
     OK: "Va bene",
+    "A bright guide to animals for children.": "Una guida chiara sugli animali, per i bambini.",
+    "1 animal": "1 animale",
+    "1 animal lives here.": "Qui vive 1 animale.",
     "This site stores a cookie on this device. It remembers your language and your access key. It does not watch you on other sites.":
       "Questo sito salva un cookie su questo dispositivo. Ricorda la tua lingua e la tua chiave di accesso. Non ti segue sugli altri siti.",
   },
@@ -402,6 +417,9 @@ export const ui: Record<Locale, Record<string, string>> = {
     Lock: "Bloquear",
     Cookies: "Cookies",
     OK: "Vale",
+    "A bright guide to animals for children.": "Una guía clara de animales para niños.",
+    "1 animal": "1 animal",
+    "1 animal lives here.": "Aquí vive 1 animal.",
     "This site stores a cookie on this device. It remembers your language and your access key. It does not watch you on other sites.":
       "Este sitio guarda una cookie en este aparato. Recuerda tu idioma y tu clave de acceso. No te vigila en otros sitios.",
   },
@@ -465,6 +483,9 @@ export const ui: Record<Locale, Record<string, string>> = {
     Lock: "Запереть",
     Cookies: "Куки",
     OK: "Хорошо",
+    "A bright guide to animals for children.": "Яркий справочник о животных для детей.",
+    "1 animal": "1 животное",
+    "1 animal lives here.": "Здесь живёт 1 животное.",
     "This site stores a cookie on this device. It remembers your language and your access key. It does not watch you on other sites.":
       "Этот сайт хранит cookie на этом устройстве. Он запоминает твой язык и твой ключ доступа. Он не следит за тобой на других сайтах.",
   },

@@ -16,7 +16,7 @@ export const photos: Record<string, Photo> = {
   },
   "cat": {
     src: "/photos/cat.jpg",
-    author: "Karin Langner-Bahmann , upload von Martin Bahmann",
+    author: "Karin Langner-Bahmann and Martin Bahmann",
     license: "CC BY-SA 3.0",
     licenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/",
     source: "https://commons.wikimedia.org/wiki/File:Siam_lilacpoint.jpg",
@@ -58,7 +58,7 @@ export const photos: Record<string, Photo> = {
   },
   "giraffe": {
     src: "/photos/giraffe.jpg",
-    author: "Muhammad Mahdi Karim Facebook The making of this document was supported by Wikimedia CH .",
+    author: "Muhammad Mahdi Karim",
     license: "GFDL 1.2",
     licenseUrl: "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
     source: "https://commons.wikimedia.org/wiki/File:Giraffe_Mikumi_National_Park.jpg",
@@ -79,7 +79,7 @@ export const photos: Record<string, Photo> = {
   },
   "kangaroo": {
     src: "/photos/kangaroo.jpg",
-    author: "fir0002 flagstaffotos [at] gmail.com Canon 20D + Canon 70-200mm f/2.8 L",
+    author: "Fir0002",
     license: "GFDL 1.2",
     licenseUrl: "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
     source: "https://commons.wikimedia.org/wiki/File:Red_kangaroo_-_melbourne_zoo.jpg",
@@ -212,7 +212,7 @@ export const photos: Record<string, Photo> = {
   },
   "three-toed-sloth": {
     src: "/photos/three-toed-sloth.jpg",
-    author: "Stefan Laube ( Tauchgurke )",
+    author: "Stefan Laube",
     license: "Public domain",
     licenseUrl: "",
     source: "https://commons.wikimedia.org/wiki/File:Bradypus.jpg",
@@ -261,7 +261,7 @@ export const photos: Record<string, Photo> = {
   },
   "house-mouse": {
     src: "/photos/house-mouse.jpg",
-    author: "Unknown author Unknown author (original) / Ilmari Karonen (editing)",
+    author: "Ilmari Karonen",
     license: "Public domain",
     licenseUrl: "",
     source: "https://commons.wikimedia.org/wiki/File:Mouse_white_background.jpg",
@@ -310,7 +310,7 @@ export const photos: Record<string, Photo> = {
   },
   "goat": {
     src: "/photos/goat.jpg",
-    author: "Kuebi = Armin K\u00fcbelbeck",
+    author: "Armin Kübelbeck",
     license: "CC BY-SA 3.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
     source: "https://commons.wikimedia.org/wiki/File:Hausziege_04.jpg",
@@ -429,14 +429,14 @@ export const photos: Record<string, Photo> = {
   },
   "pangolin": {
     src: "/photos/pangolin.jpg",
-    author: "Piekfrosch at German Wikipedia ( Original text: Piekfrosch (Wikipedia-User) )",
+    author: "Piekfrosch",
     license: "CC BY-SA 3.0",
     licenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/",
     source: "https://commons.wikimedia.org/wiki/File:Pangolin_borneo.jpg",
   },
   "arctic-fox": {
     src: "/photos/arctic-fox.jpg",
-    author: "Jonatan Pie ( unsplash.com/@r3dmax )",
+    author: "Jonatan Pie",
     license: "CC0",
     licenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     source: "https://commons.wikimedia.org/wiki/File:Vulpes_lagopus_in_Iceland_(cropped_3).jpg",
@@ -520,7 +520,7 @@ export const photos: Record<string, Photo> = {
   },
   "mallard": {
     src: "/photos/mallard.jpg",
-    author: "This picture was realized by Richard Bartz by using a Canon EF 70-300mm f/4-5.6 IS USM Len",
+    author: "Richard Bartz",
     license: "CC BY-SA 2.5",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/2.5",
     source: "https://commons.wikimedia.org/wiki/File:Anas_platyrhynchos_male_female_quadrat.jpg",
@@ -611,7 +611,7 @@ export const photos: Record<string, Photo> = {
   },
   "wandering-albatross": {
     src: "/photos/wandering-albatross.jpg",
-    author: "JJ Harrison ( https://www.jjharrison.com.au/ )",
+    author: "JJ Harrison",
     license: "CC BY-SA 3.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
     source: "https://commons.wikimedia.org/wiki/File:Diomedea_exulans_-_SE_Tasmania.jpg",
@@ -653,7 +653,7 @@ export const photos: Record<string, Photo> = {
   },
   "emu": {
     src: "/photos/emu.jpg",
-    author: "JJ Harrison ( https://www.jjharrison.com.au/ )",
+    author: "JJ Harrison",
     license: "CC BY-SA 4.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
     source: "https://commons.wikimedia.org/wiki/File:Emu_1_-_Tidbinbilla.jpg",
@@ -674,7 +674,7 @@ export const photos: Record<string, Photo> = {
   },
   "laughing-kookaburra": {
     src: "/photos/laughing-kookaburra.jpg",
-    author: "Photo by: Paulweberphoto - paulweberphoto.com",
+    author: "Paulweberphoto",
     license: "CC BY 4.0",
     licenseUrl: "https://creativecommons.org/licenses/by/4.0",
     source: "https://commons.wikimedia.org/wiki/File:Laughing_Kookaburra_1.jpg",
@@ -765,14 +765,14 @@ export const photos: Record<string, Photo> = {
   },
   "galapagos-tortoise": {
     src: "/photos/galapagos-tortoise.jpg",
-    author: "Mfield , Matthew Field, http://www.photography.mattfield.com",
+    author: "Matthew Field",
     license: "CC BY-SA 3.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
     source: "https://commons.wikimedia.org/wiki/File:Galapagos_giant_tortoise_Geochelone_elephantopus.jpg",
   },
   "komodo-dragon": {
     src: "/photos/komodo-dragon.jpg",
-    author: "James Jolokia ( james1203 )",
+    author: "James Jolokia",
     license: "CC BY 4.0",
     licenseUrl: "https://creativecommons.org/licenses/by/4.0",
     source: "https://commons.wikimedia.org/wiki/File:202306_Varanus_komodoensis.jpg",
@@ -800,7 +800,7 @@ export const photos: Record<string, Photo> = {
   },
   "bearded-dragon": {
     src: "/photos/bearded-dragon.jpg",
-    author: "Photograph: Frank C. M\u00fcller , Baden-Baden",
+    author: "Frank C. Müller",
     license: "CC BY-SA 2.5",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/2.5",
     source: "https://commons.wikimedia.org/wiki/File:Bartagame_(fcm).jpg",
@@ -835,14 +835,14 @@ export const photos: Record<string, Photo> = {
   },
   "box-turtle": {
     src: "/photos/box-turtle.jpg",
-    author: "(c) Joshua Liverman, some rights reserved (CC BY)",
+    author: "Joshua Liverman",
     license: "CC BY 4.0",
     licenseUrl: "https://creativecommons.org/licenses/by/4.0",
     source: "https://commons.wikimedia.org/wiki/File:Eastern_Box_Turtle,_North_Carolina,_US_imported_from_iNaturalist_photo_71168521_(cropped).jpg",
   },
   "blue-tongued-skink": {
     src: "/photos/blue-tongued-skink.jpg",
-    author: "JJ Harrison ( https://www.jjharrison.com.au/ )",
+    author: "JJ Harrison",
     license: "CC BY-SA 3.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
     source: "https://commons.wikimedia.org/wiki/File:Tiliqua_scincoides_scincoides.jpg",
@@ -940,7 +940,7 @@ export const photos: Record<string, Photo> = {
   },
   "tomato-frog": {
     src: "/photos/tomato-frog.jpg",
-    author: "The original uploader was Firereptiles at English Wikipedia",
+    author: "Firereptiles",
     license: "Attribution",
     licenseUrl: "",
     source: "https://commons.wikimedia.org/wiki/File:TomatoFrog.jpg",
@@ -968,7 +968,7 @@ export const photos: Record<string, Photo> = {
   },
   "great-white-shark": {
     src: "/photos/great-white-shark.jpg",
-    author: "Pterantula (Terry Goss) at en.wikipedia",
+    author: "Terry Goss",
     license: "CC BY 2.5",
     licenseUrl: "https://creativecommons.org/licenses/by/2.5",
     source: "https://commons.wikimedia.org/wiki/File:White_shark.jpg",
@@ -1010,7 +1010,7 @@ export const photos: Record<string, Photo> = {
   },
   "bluefin-tuna": {
     src: "/photos/bluefin-tuna.jpg",
-    author: "Unknown author Unknown author",
+    author: "Unknown photographer",
     license: "Public domain",
     licenseUrl: "",
     source: "https://commons.wikimedia.org/wiki/File:Bluefin-big.jpg",
@@ -1122,7 +1122,7 @@ export const photos: Record<string, Photo> = {
   },
   "lionfish": {
     src: "/photos/lionfish.jpg",
-    author: "Photo by Jens Petersen",
+    author: "Jens Petersen",
     license: "CC BY 2.5",
     licenseUrl: "https://creativecommons.org/licenses/by/2.5",
     source: "https://commons.wikimedia.org/wiki/File:Pterois_volitans_Manado-e_edit.jpg",
@@ -1164,7 +1164,7 @@ export const photos: Record<string, Photo> = {
   },
   "monarch-butterfly": {
     src: "/photos/monarch-butterfly.jpg",
-    author: "Photo by and (c)2007 Derek Ramsey ( Ram-Man )",
+    author: "Derek Ramsey",
     license: "GFDL 1.2",
     licenseUrl: "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
     source: "https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg",
@@ -1241,7 +1241,7 @@ export const photos: Record<string, Photo> = {
   },
   "termite": {
     src: "/photos/termite.jpg",
-    author: "Photo by Scott Bauer",
+    author: "Scott Bauer",
     license: "Public domain",
     licenseUrl: "",
     source: "https://commons.wikimedia.org/wiki/File:Coptotermes_formosanus_shiraki_USGov_k8204-7.jpg",
@@ -1276,7 +1276,7 @@ export const photos: Record<string, Photo> = {
   },
   "silkworm": {
     src: "/photos/silkworm.jpg",
-    author: "Oakenking at en.wikipedia",
+    author: "Oakenking",
     license: "CC BY-SA 2.5",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/2.5",
     source: "https://commons.wikimedia.org/wiki/File:Pairedmoths.jpg",
