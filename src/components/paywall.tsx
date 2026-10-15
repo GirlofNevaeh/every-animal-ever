@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { useAccess } from "@/lib/access";
 import { useI18n } from "@/i18n/context";
 
-const BUY_URL = "https://everyschoolever.com";
+const BUY_URL = "https://www.everyschoolever.com/pricing?plan=";
 
 export function Paywall() {
   const { t } = useI18n();
