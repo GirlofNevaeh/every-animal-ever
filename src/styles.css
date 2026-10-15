@@ -66,11 +66,25 @@
   }
 }
 
+body:has(.cookie-notice) {
+  padding-bottom: 11rem;
+}
+
+@media (min-width: 640px) {
+  body:has(.cookie-notice) {
+    padding-bottom: 6.5rem;
+  }
+}
+
 @media print {
   header,
   footer,
   .no-print {
     display: none !important;
+  }
+
+  body:has(.cookie-notice) {
+    padding-bottom: 0 !important;
   }
 
   body {

@@ -2,6 +2,7 @@ import { createRootRoute, HeadContent, Outlet, Scripts, useRouterState } from "@
 import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { Paywall } from "@/components/paywall";
+import { CookieNotice } from "@/components/cookie-notice";
 import { SiteFooter, SiteHeader } from "@/components/site-header";
 import { I18nProvider } from "@/i18n/context";
 import { AccessProvider, useAccess } from "@/lib/access";
@@ -54,6 +55,7 @@ function RootDocument() {
             <AccessProvider initialOpen={accessOpen}>
               <SiteHeader />
               <GatedOutlet />
+              <CookieNotice />
             </AccessProvider>
           </I18nProvider>
         </AuthProvider>

@@ -80,6 +80,10 @@ export const ui: Record<Locale, Record<string, string>> = {
     "There are 250 questions. Each game uses 10 or 25 of them.":
       "Tha 250 ceist ann. Bidh gach geama a’ cleachdadh 10 no 25 dhiubh.",
     Lock: "Glas",
+    Cookies: "Briosgaidean",
+    OK: "Ceart",
+    "This site stores a cookie on this device. It remembers your language and your access key. It does not watch you on other sites.":
+      "Tha an làrach seo a' cumail briosgaid air an inneal seo. Tha i a' cuimhneachadh do chànain agus d' iuchair inntrigidh. Chan eil i gad leantainn air làraichean eile.",
   },
   cy: {
     "Every Animal Ever": "Pob anifail erioed",
@@ -142,6 +146,10 @@ export const ui: Record<Locale, Record<string, string>> = {
     "The place is named in each box. Write one animal that lives there.":
       "Mae enw'r lle ym mhob blwch. Ysgrifennwch un anifail sy'n byw yno.",
     Lock: "Cloi",
+    Cookies: "Cwcis",
+    OK: "Iawn",
+    "This site stores a cookie on this device. It remembers your language and your access key. It does not watch you on other sites.":
+      "Mae'r wefan hon yn cadw cwci ar y ddyfais hon. Mae'n cofio eich iaith a'ch allwedd mynediad. Nid yw'n eich gwylio ar wefannau eraill.",
   },
   ga: {
     "Every Animal Ever": "Gach ainmhí riamh",
@@ -203,6 +211,10 @@ export const ui: Record<Locale, Record<string, string>> = {
     "There are 250 questions. Each game uses 10 or 25 of them.":
       "Tá 250 ceist ann. Úsáideann gach cluiche 10 nó 25 acu.",
     Lock: "Glasáil",
+    Cookies: "Fianáin",
+    OK: "Ceart go leor",
+    "This site stores a cookie on this device. It remembers your language and your access key. It does not watch you on other sites.":
+      "Stórálann an suíomh seo fianán ar an ngléas seo. Cuimhníonn sé ar do theanga agus ar d'eochair rochtana. Ní leanann sé thú ar shuíomhanna eile.",
   },
   fr: {
     "Every Animal Ever": "Tous les animaux",
@@ -262,6 +274,10 @@ export const ui: Record<Locale, Record<string, string>> = {
     "The place is named in each box. Write one animal that lives there.":
       "Le lieu est écrit dans chaque case. Écris un animal qui y vit.",
     Lock: "Verrouiller",
+    Cookies: "Cookies",
+    OK: "D'accord",
+    "This site stores a cookie on this device. It remembers your language and your access key. It does not watch you on other sites.":
+      "Ce site garde un cookie sur cet appareil. Il retient ta langue et ta clé d'accès. Il ne te suit pas sur les autres sites.",
   },
   it: {
     "Every Animal Ever": "Tutti gli animali",
@@ -321,6 +337,10 @@ export const ui: Record<Locale, Record<string, string>> = {
     "The place is named in each box. Write one animal that lives there.":
       "Il luogo è scritto in ogni riquadro. Scrivi un animale che ci vive.",
     Lock: "Blocca",
+    Cookies: "Cookie",
+    OK: "Va bene",
+    "This site stores a cookie on this device. It remembers your language and your access key. It does not watch you on other sites.":
+      "Questo sito salva un cookie su questo dispositivo. Ricorda la tua lingua e la tua chiave di accesso. Non ti segue sugli altri siti.",
   },
   es: {
     "Every Animal Ever": "Todos los animales",
@@ -380,6 +400,10 @@ export const ui: Record<Locale, Record<string, string>> = {
     "The place is named in each box. Write one animal that lives there.":
       "El lugar está escrito en cada caja. Escribe un animal que viva ahí.",
     Lock: "Bloquear",
+    Cookies: "Cookies",
+    OK: "Vale",
+    "This site stores a cookie on this device. It remembers your language and your access key. It does not watch you on other sites.":
+      "Este sitio guarda una cookie en este aparato. Recuerda tu idioma y tu clave de acceso. No te vigila en otros sitios.",
   },
   ru: {
     "Every Animal Ever": "Все животные",
@@ -439,5 +463,9 @@ export const ui: Record<Locale, Record<string, string>> = {
     "The place is named in each box. Write one animal that lives there.":
       "Место названо в каждой рамке. Напиши одно животное, которое там живёт.",
     Lock: "Запереть",
+    Cookies: "Куки",
+    OK: "Хорошо",
+    "This site stores a cookie on this device. It remembers your language and your access key. It does not watch you on other sites.":
+      "Этот сайт хранит cookie на этом устройстве. Он запоминает твой язык и твой ключ доступа. Он не следит за тобой на других сайтах.",
   },
 };
