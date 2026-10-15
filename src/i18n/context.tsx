@@ -4,7 +4,7 @@ import { ui } from "@/i18n/ui";
 
 const STORAGE_KEY = "eae-lang";
 
-const loaders: Record<Exclude<Locale, "en">, () => Promise<{ default: Record<string, string> }>> = {
+const loaders: Record<Exclude<Locale, "en" | "en-US">, () => Promise<{ default: Record<string, string> }>> = {
   gd: () => import("./catalogs/gd.json"),
   cy: () => import("./catalogs/cy.json"),
   ga: () => import("./catalogs/ga.json"),
@@ -34,7 +34,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     document.documentElement.lang = locale;
-    if (locale === "en") {
+    if (locale === "en" || locale === "en-US") {
       setCatalog({});
       return;
     }

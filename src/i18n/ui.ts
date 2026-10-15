@@ -3,6 +3,23 @@ import type { Locale } from "@/i18n/locales";
 /** Short chrome, checked by hand so the header switches immediately. */
 export const ui: Record<Locale, Record<string, string>> = {
   en: {},
+  "en-US": {
+    Favourites: "Favorites",
+    "Camouflage is a colour or shape that blends in.": "Camouflage is a color or shape that blends in.",
+    "Grey wolf": "Gray wolf",
+    "Grey wolves live in forests, mountains, and cold north lands.":
+      "Gray wolves live in forests, mountains, and cold north lands.",
+    "Grey squirrel": "Gray squirrel",
+    "Grey squirrels live in woods and city parks.": "Gray squirrels live in woods and city parks.",
+    "A grey squirrel can turn its ankles and climb down a tree headfirst.":
+      "A gray squirrel can turn its ankles and climb down a tree headfirst.",
+    "How can a grey squirrel climb down a tree?": "How can a gray squirrel climb down a tree?",
+    "Add one help for grey squirrels, such as trees.": "Add one help for gray squirrels, such as trees.",
+    "Flamingos turn pink because of the food they eat. A chick is grey or white.":
+      "Flamingos turn pink because of the food they eat. A chick is gray or white.",
+    "What does a grey wolf eat?": "What does a gray wolf eat?",
+    "What does a grey squirrel eat?": "What does a gray squirrel eat?",
+  },
   gd: {
     "Every Animal Ever": "A h-uile beathach",
     Home: "Dachaigh",

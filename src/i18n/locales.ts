@@ -1,9 +1,10 @@
-export const locales = ["en", "gd", "cy", "ga", "fr", "it", "es", "ru"] as const;
+export const locales = ["en", "en-US", "gd", "cy", "ga", "fr", "it", "es", "ru"] as const;
 
 export type Locale = (typeof locales)[number];
 
 export const localeLabel: Record<Locale, string> = {
   en: "English",
+  "en-US": "American English",
   gd: "Gàidhlig",
   cy: "Cymraeg",
   ga: "Gaeilge",
@@ -15,6 +16,7 @@ export const localeLabel: Record<Locale, string> = {
 
 export const localeShort: Record<Locale, string> = {
   en: "EN",
+  "en-US": "US",
   gd: "GD",
   cy: "CY",
   ga: "GA",
