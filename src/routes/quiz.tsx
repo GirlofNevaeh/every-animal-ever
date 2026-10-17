@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { quizBank, type QuizQuestion } from "@/data/quiz-bank";
 import { useI18n } from "@/i18n/context";
+import { playCheer, playFart, warmAudio } from "@/lib/quiz-sounds";
 
 export const Route = createFileRoute("/quiz")({
   component: QuizPage,
@@ -69,6 +70,7 @@ function QuizPage() {
   }, [phase, index, suddenCard]);
 
   function start() {
+    warmAudio();
     const cards = shuffle(quizBank).slice(0, mode === "10" ? 10 : 25).map(makeCard);
     const nextTeams = solo
       ? [{ id: 1, name: "You", score: 0 }]
@@ -163,16 +165,22 @@ function QuizPage() {
   }
 
   function chooseSolo(choice: string) {
-    if (phase !== "play" || soloPick) return;
+    if (phase !== "play" || soloPick || !card) return;
+    warmAudio();
     setSoloPick(choice);
     setPhase("feedback");
+    if (choice === card.correct) playCheer();
+    else playFart();
   }
 
   function chooseTeam(teamId: number, choice: string) {
-    if (phase !== "play" && phase !== "sudden") return;
+    if ((phase !== "play" && phase !== "sudden") || !card) return;
     if (picks[teamId]) return;
+    warmAudio();
     const next = { ...picks, [teamId]: choice };
     setPicks(next);
+    if (choice === card.correct) playCheer();
+    else playFart();
     const needed = phase === "sudden" ? contenders : teams.map((team) => team.id);
     if (needed.every((id) => next[id])) {
       setPhase(phase === "sudden" ? "sudden-feedback" : "feedback");
@@ -182,7 +190,7 @@ function QuizPage() {
   const showing = phase === "feedback" || phase === "sudden-feedback";
 
   return (
-    <main className="mx-auto max-w-3xl px-3 py-4">
+    <main className="mx-auto max-w-3xl px-3 py-4" onPointerDown={warmAudio}>
       <h1 className="font-display text-4xl">{t("Quiz")}</h1>
       {phase === "setup" ? (
         <Setup
